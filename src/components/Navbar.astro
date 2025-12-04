@@ -1,0 +1,116 @@
+---
+import '../styles/navbar.css'
+// Navbar.astro
+
+const navLinks = [
+  { name: 'HOME', href: '/' },
+  { name: 'ABOUT US', href: '/about' },
+  { name: 'SERVICES', href: '/services' },
+  { name: 'BLOG', href: '/blog' },
+  { name: 'CONTACT', href: '/contact' }
+];
+
+const services = [
+  'Trucking',
+  'Air Fright',
+  'Ship Freight',
+  'Rail Freight',
+  'Warehousing',
+  'Customs Brokerage',
+  'Project Cargo'
+];
+---
+
+<nav class="navbar">
+  <div class="navbar-container">
+    <!-- Logo -->
+    <a href="/" class="logo">
+      <img src="/logo.svg" alt="LogiXpress" />
+    </a>
+
+    <!-- Desktop Menu -->
+    <ul class="nav-menu desktop-menu">
+      {navLinks.map(link => (
+        <li>
+          <a href={link.href}>{link.name}</a>
+        </li>
+      ))}
+    </ul>
+
+    <!-- Desktop CTA Button -->
+    <a href="/contact" class="cta-btn desktop-cta">Book Shipment</a>
+
+    <!-- Hamburger Button -->
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <!-- Mobile Sidebar Menu -->
+  <div class="sidebar-overlay"></div>
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <img src="/logo.svg" alt="LogiXpress" class="sidebar-logo" />
+      <button class="close-btn" aria-label="Close menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="sidebar-content">
+      <!-- Our Services Section -->
+      <div class="sidebar-section">
+        <h3>Our services</h3>
+        <ul class="services-list">
+          {services.map(service => (
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M16.6 7L8.5 15.1 3.4 10" stroke="#ff5722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              {service}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Contact Us Section -->
+      <div class="sidebar-section">
+        <h3>Contact Us</h3>
+        <ul class="contact-list">
+          <li>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M2 4h16M2 4v12h16V4M2 4l8 6 8-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <a href="tel:+9293339296">+929 333 9296</a>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M10 11a2 2 0 100-4 2 2 0 000 4z" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M10 2C7.2 2 5 4.2 5 7c0 4.5 5 9 5 9s5-4.5 5-9c0-2.8-2.2-5-5-5z" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+            100 S Main St, New York, NY
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M2 6l8 5 8-5M2 6v8l8 5 8-5V6l-8-5-8 5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <a href="mailto:contact@logixpress.com">contact@logixpress.com</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- About Us Section -->
+      <div class="sidebar-section">
+        <h3>About us</h3>
+        <p>We are a trusted logistics and cargo solutions provider committed to delivering your goods safely, efficiently, and on time.</p>
+      </div>
+    </div>
+  </aside>
+</nav>
+
+<script>
+    import '../scripts/navbar'
+</script>

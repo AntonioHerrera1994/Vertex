@@ -1,0 +1,63 @@
+---
+import '../styles/header.css'
+import Navbar from './Navbar.astro';
+const slides = [
+  {
+    image: '../assets/a1-1536x861.webp',
+    title: 'Cross Country Coverage with Reliable Trucking',
+    description: 'We maintain relationships with thousands of vetted carriers across the United States. Whether you need LTL, full truckload, or expedited service, we match you with the right provider and manage the details.',
+    button: 'Book Shipment'
+  },
+  {
+    image: '../assets/a2-768x430.webp',
+    title: 'Seamless Ship Freight for Global Trade',
+    description: 'We partner with leading international shipping lines to move your cargo across major trade routes. From full containers to consolidated loads, we provide dependable schedules and cost-efficient solutions worldwide.',
+    button: 'Get Quote'
+  }
+];
+---
+
+<section class="hero-carousel">
+    <Navbar />
+  <div class="carousel-container">
+    <!-- Slides -->
+    {slides.map((slide, index) => (
+      <div class={`slide ${index === 0 ? 'active' : ''}`} data-slide={index}>
+        <div class="slide-bg" style={`background-image: url('${slide.image}')`}></div>
+        <div class="overlay"></div>
+        <div class="content">
+          <h1>{slide.title}</h1>
+          <p>{slide.description}</p>
+          <a href="#contact" class="cta-button">{slide.button}</a>
+        </div>
+      </div>
+    ))}
+
+    <!-- Controles -->
+    <button class="nav-btn prev" aria-label="Previous slide">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+        <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <button class="nav-btn next" aria-label="Next slide">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+        <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+    <!-- Indicadores -->
+    <div class="indicators">
+      {slides.map((_, index) => (
+        <button 
+          class={`indicator ${index === 0 ? 'active' : ''}`} 
+          data-slide={index}
+          aria-label={`Go to slide ${index + 1}`}
+        ></button>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+    import '../scripts/hero'
+</script>

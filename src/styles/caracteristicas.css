@@ -1,0 +1,37 @@
+.caract{
+    margin: 0 17px ;
+}
+
+.car-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    gap: 20px;
+}
+.caja{
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 16px;
+}
+
+
+.caja h2{
+    border-top-color: #BDBDBD;
+    color: white;
+    font-family: "Manrope", Sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.caja p{
+      font-family: "Manrope", Sans-serif;
+    font-weight: 400;
+    color: white;
+    line-height: 25px;
+    font-size: 17px;
+}
