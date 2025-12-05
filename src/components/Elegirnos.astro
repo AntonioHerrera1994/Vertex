@@ -1,11 +1,52 @@
 ---
+
+// FeaturesGrid.astro
+const features = [
+  {
+    title: 'Experienced Logistics',
+    description: 'Our specialists bring decades of experience in freight forwarding and customs clearance, ensuring smooth and efficient supply chain solutions worldwide.'
+  },
+  {
+    title: 'Fast Delivery Commitment',
+    description: 'We understand the urgency of every shipment and act quickly. Optimized routes and tracking technology ensure timely deliveries without unnecessary delays.'
+  },
+  {
+    title: 'Transparent Pricing Policy',
+    description: 'Our pricing is clear, competitive, and easy to understand for all clients. We guarantee no hidden charges and complete financial transparency every time.'
+  },
+  {
+    title: 'Reliable Cargo Handling',
+    description: 'Every shipment is managed with precision and care to avoid risks. From packing to loading, we guarantee your cargo arrives safely and intact.'
+  },
+  {
+    title: 'Comprehensive Solutions',
+    description: 'We cover every step of logistics including warehousing, distribution, and freight. Our integrated services make supply chain management simple and efficient.'
+  },
+  {
+    title: 'Satisfaction Guarantee',
+    description: 'Your trust is our highest priority across all shipments. We back our services with responsive support and a strong customer satisfaction guarantee.'
+  }
+];
+
 import '../styles/elegirnos.css'
 ---
 
-<section class="elegirnos">
-    <div class="elegirnos-cont">
-         <h4>Why Choose Us</h4>
-        <h2>Trusted Logistics Partner for <br>Worldwide Shipping
-</h2>
+<section class="features-section">
+     <h4>Our Services</h4>
+        <h2>Trusted logistics partner for <br>worldwide shipping</h2>
+  <div class="features-container">
+    <div class="features-grid">
+      {features.map(feature => (
+        <div class="feature-card">
+          <div class="icon-box">
+            <i class="bi bi-check"></i>
+          </div>
+          <div class="feature-content">
+            <h3>{feature.title}</h3>
+            <p>{feature.description}</p>
+          </div>
+        </div>
+      ))}
     </div>
+  </div>
 </section>
