@@ -35,3 +35,15 @@
     line-height: 25px;
     font-size: 17px;
 }
+
+@media screen and (max-width:801px){
+    .caract{
+    margin: 0 15px ;
+}
+
+.car-grid{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0,1fr));
+    gap: 20px;
+}
+}

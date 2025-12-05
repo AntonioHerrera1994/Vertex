@@ -37,6 +37,7 @@
     font-size: 17px;
     font-weight: 600;
   text-align: left;
+  margin: 0;
   }
 
   /* Tabs */
@@ -160,7 +161,7 @@
   }
 
   /* Responsive */
-  @media (max-width: 768px) {
+  @media (max-width: 801px) {
     .faqs-section {
       padding: 60px 20px;
     }
@@ -168,6 +169,24 @@
     .faqs-header h2 {
       font-size: 2rem;
     }
+
+      .faqs-grid{
+      display: grid;
+    grid-template-columns: repeat(1, minmax(0,1fr));
+    gap: 20px;
+  }
+
+    .faqs-header h2 {
+
+    font-size: 35px;
+    text-align: center;
+
+  }
+
+  .faqs-header h4 {
+   text-align: center;
+  
+  
 
     .tabs-wrapper {
       flex-direction: column;

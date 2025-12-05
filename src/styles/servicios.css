@@ -48,3 +48,22 @@
         max-width: 20%;
         height: auto;
     }
+
+    @media screen and (max-width:801px){
+
+        .serv-cont{
+    padding: 20px 25px;
+}
+
+        .grid-serv{
+    grid-template-columns: repeat(1, minmax(0,1fr));
+    gap: 40px;
+}
+
+ .serv-cont h2{
+
+    font-size: 35px;
+    margin-bottom: 30px;
+
+    }
+    }

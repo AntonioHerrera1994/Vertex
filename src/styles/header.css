@@ -167,12 +167,13 @@
   }
 
   /* Responsive */
-  @media (max-width: 768px) {
+  @media (max-width: 801px) {
     .hero-carousel {
       height: 60vh;
       min-height: 450px;
-      margin: 15px;
+      margin: 15px auto;
       border-radius: 16px;
+    width: calc(100% - 30px);
     }
 
     .content {
@@ -191,6 +192,24 @@
     .nav-btn.next {
       right: 15px;
     }
+
+    .content h1 {
+    font-size: 30px;
+     margin: 0;
+    padding: 10px 40px;
+  }
+
+  .content p {
+margin: 0;
+    padding: 0px 40px;
+     margin-bottom: 10px;
+    font-size: 17px;
+  }
+  .cta-button {
+
+    padding: 16px 20px;
+
+  }
   }
 
   @media (max-width: 480px) {
@@ -210,4 +229,5 @@
     .nav-btn.next {
       right: 10px;
     }
+    
   }

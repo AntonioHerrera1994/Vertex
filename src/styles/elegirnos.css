@@ -81,9 +81,15 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 801px) {
     .features-section {
       padding: 60px 20px;
+    }
+
+
+    .features-section h2{
+     font-size: 35px;
+    margin-bottom: 30px;
     }
 
     .features-grid {
