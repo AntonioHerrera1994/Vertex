@@ -1,0 +1,28 @@
+.primercuadro{
+    margin: 0 20px;
+    background-image: url('../assets/video.webp');
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px ;
+}
+
+.cuadros-2{
+    display: grid;
+   grid-template-columns: repeat(2, minmax(0,1fr));
+   gap: 20px;
+   height: 80vh;
+    margin: 20px 20px;
+}
+
+.primero{
+    background-color: #F85C00;
+ border-radius: 20px;
+}
+
+.segundo{
+    background-image: url('../assets/segunda.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}

@@ -1,14 +1,46 @@
 ---
 import '../styles/servicios.css'
+
+import Img1 from '../assets/1-1.png'
+import Img2 from '../assets/2.png'
+import Img3 from '../assets/3-1.png'
+import Img4 from '../assets/4-1.png'
 ---
 
 <section class="servicios">
     <div class="serv-cont">
         <h4>Our Services</h4>
-        <h2>Trusted logistics partner for worldwide shipping</h2>
+        <h2>Trusted logistics partner for <br>worldwide shipping</h2>
 
         <div class="grid-serv">
-            
+            <div class="elemento">
+                <img 
+                src={Img1.src}
+                />
+                <h5>Trucking</h5>
+                <p>Reliable ground transportation for shipments across the United States with flexible fleet options.</p>
+            </div>
+              <div class="elemento">
+                <img 
+                src={Img2.src}
+                />
+                <h5>Air Freight</h5>
+                <p>Fast delivery of time-sensitive cargo using global air routes with real-time tracking.</p>
+            </div>
+              <div class="elemento">
+                <img 
+                src={Img3.src}
+                />
+                <h5>Ship Freigh</h5>
+                <p>Cost-effective shipping solution for bulk cargo with dependable international sea freight services.</p>
+            </div>
+              <div class="elemento">
+                <img 
+                src={Img4.src}
+                />
+                <h5>Rail freigh</h5>
+                <p>Efficient and eco-friendly rail transport option ideal for long-distance heavy shipments.</p>
+            </div>
         </div>
     </div>
 </section>
