@@ -1,0 +1,10 @@
+.serv-cont{
+    padding: 20px;
+}
+
+
+.grid-serv{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    gap: 20px;
+}
