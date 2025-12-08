@@ -1,0 +1,289 @@
+---
+import '../styles/tabla.css'
+// ServiceDetail.astro
+interface Feature {
+  icon?: string;
+  title: string;
+  description: string;
+}
+
+interface Service {
+  id: string;
+  name: string;
+  title: string;
+  description: string;
+  image: string;
+  imageCaption: string;
+  features: Feature[];
+}
+
+const services: Service[] = [
+  {
+    id: 'air-freight',
+    name: 'Air Freight',
+    title: 'Fast Air Freight Solutions for Global Trade',
+    description: 'Air freight provides the fastest shipping method for time-sensitive cargo, connecting businesses worldwide. From express shipments to specialized handling, we manage every aspect of air transportation—booking, customs clearance, tracking, and final delivery.',
+    image: '/assets/air-freight.jpg',
+    imageCaption: 'Trusted air freight solutions for urgent deliveries worldwide.',
+    features: [
+      {
+        title: 'Express Delivery',
+        description: 'Fast shipping options for time-critical cargo with guaranteed delivery times.'
+      },
+      {
+        title: 'Global Coverage',
+        description: 'Access to major airports worldwide ensuring seamless connections.'
+      },
+      {
+        title: 'Real-Time Tracking',
+        description: 'Monitor your shipments 24/7 with advanced tracking technology.'
+      },
+      {
+        title: 'Specialized Handling',
+        description: 'Expert handling for temperature-sensitive and fragile cargo.'
+      }
+    ]
+  },
+  {
+    id: 'rail-freight',
+    name: 'Rail Freight',
+    title: 'Cost-Effective Rail Freight Services',
+    description: 'Rail freight offers an economical and environmentally friendly solution for moving large volumes of goods. Our rail services connect major trade routes across continents, providing reliable and sustainable transportation.',
+    image: '/assets/rail-freight.jpg',
+    imageCaption: 'Efficient rail freight solutions for bulk cargo transportation.',
+    features: [
+      {
+        title: 'Eco-Friendly Transport',
+        description: 'Reduce carbon footprint with sustainable rail transportation.'
+      },
+      {
+        title: 'Large Volume Capacity',
+        description: 'Move bulk cargo efficiently with high-capacity rail services.'
+      },
+      {
+        title: 'Continental Networks',
+        description: 'Access extensive rail networks across major trade corridors.'
+      },
+      {
+        title: 'Cost Efficiency',
+        description: 'Lower transportation costs for non-urgent bulk shipments.'
+      }
+    ]
+  },
+  {
+    id: 'ship-freight',
+    name: 'Ship Freight',
+    title: 'Reliable Ship Freight Services for Global Trade',
+    description: 'Ocean freight remains the backbone of international logistics, offering businesses a cost-efficient way to move goods worldwide. From full container loads to specialized cargo, we manage every aspect of the shipping process.',
+    image: '/assets/ship-freight.jpg',
+    imageCaption: 'Trusted ship freight solutions for international trade.',
+    features: [
+      {
+        title: 'Full Container Loads',
+        description: 'Dedicated containers for large shipments with door-to-door service.'
+      },
+      {
+        title: 'Consolidated Shipping',
+        description: 'Cost-effective LCL options for smaller cargo volumes.'
+      },
+      {
+        title: 'Port-to-Port Service',
+        description: 'Reliable connections between major ports worldwide.'
+      },
+      {
+        title: 'Customs Expertise',
+        description: 'Complete documentation and customs clearance support.'
+      }
+    ]
+  },
+  {
+    id: 'trucking',
+    name: 'Trucking',
+    title: 'Reliable Trucking Freight Services for Global Trade',
+    description: 'Ocean freight remains the backbone of international logistics, offering businesses a cost-efficient way to move goods worldwide. From full container loads to specialized cargo, we manage every aspect of the shipping process—documentation, customs clearance, port handling, and final delivery. Our team ensures smooth, timely, and secure transportation so your business can grow without borders.',
+    image: '/assets/trucking.jpg',
+    imageCaption: 'Trusted ship freight solutions tailored to move your cargo safely across global trade routes.',
+    features: [
+      {
+        title: 'Global Shipping Network',
+        description: 'With access to key ports, we ensure seamless freight connections across Asia, Europe, the Americas, and the Middle East.'
+      },
+      {
+        title: 'On-Time Delivery',
+        description: 'We prioritize scheduling and routing efficiency to ensure your shipments arrive on time, every time, without costly delays.'
+      },
+      {
+        title: 'Transparent Pricing Policy',
+        description: 'Our pricing is clear and competitive with no hidden fees, ensuring complete cost transparency for your business.'
+      },
+      {
+        title: 'Special Cargo Handling',
+        description: 'We have the expertise and equipment to handle oversized, hazardous, and temperature-controlled cargo with care.'
+      }
+    ]
+  },
+  {
+    id: 'warehousing',
+    name: 'Warehousing',
+    title: 'Secure Warehousing and Distribution Services',
+    description: 'Our warehousing solutions provide secure storage and efficient distribution for your inventory. From short-term storage to long-term fulfillment, we manage your goods with precision.',
+    image: '/assets/warehousing.jpg',
+    imageCaption: 'State-of-the-art warehousing facilities for your inventory.',
+    features: [
+      {
+        title: 'Secure Storage',
+        description: '24/7 monitored facilities with advanced security systems.'
+      },
+      {
+        title: 'Inventory Management',
+        description: 'Real-time tracking and management of your stored goods.'
+      },
+      {
+        title: 'Flexible Solutions',
+        description: 'Short-term and long-term storage options to fit your needs.'
+      },
+      {
+        title: 'Distribution Services',
+        description: 'Efficient order fulfillment and last-mile delivery coordination.'
+      }
+    ]
+  },
+  {
+    id: 'custom-brokerage',
+    name: 'Custom Brokerage',
+    title: 'Expert Customs Brokerage Services',
+    description: 'Navigate complex customs regulations with our expert brokerage services. We handle all documentation, duties, and compliance requirements to ensure smooth border crossings.',
+    image: '/assets/customs.jpg',
+    imageCaption: 'Professional customs clearance for international shipments.',
+    features: [
+      {
+        title: 'Customs Compliance',
+        description: 'Expert guidance on international trade regulations and requirements.'
+      },
+      {
+        title: 'Documentation Support',
+        description: 'Complete preparation of all required customs paperwork.'
+      },
+      {
+        title: 'Duty Calculation',
+        description: 'Accurate assessment of duties, taxes, and fees.'
+      },
+      {
+        title: 'Fast Clearance',
+        description: 'Expedited processing to minimize border delays.'
+      }
+    ]
+  },
+  {
+    id: 'last-mile',
+    name: 'Last Mile Delivery',
+    title: 'Efficient Last Mile Delivery Solutions',
+    description: 'Complete the final leg of your supply chain with our reliable last mile delivery services. We ensure your products reach customers quickly and safely.',
+    image: '/assets/last-mile.jpg',
+    imageCaption: 'Fast and reliable last mile delivery to your customers.',
+    features: [
+      {
+        title: 'Same-Day Delivery',
+        description: 'Urgent delivery options for time-sensitive shipments.'
+      },
+      {
+        title: 'Route Optimization',
+        description: 'Efficient routing for faster deliveries and lower costs.'
+      },
+      {
+        title: 'Proof of Delivery',
+        description: 'Digital signatures and photo confirmation for every delivery.'
+      },
+      {
+        title: 'Customer Communication',
+        description: 'Real-time updates and notifications for recipients.'
+      }
+    ]
+  },
+  {
+    id: 'project-cargo',
+    name: 'Project Cargo',
+    title: 'Specialized Project Cargo Solutions',
+    description: 'Handle complex, oversized, and heavy cargo with our specialized project logistics services. We provide customized solutions for unique transportation challenges.',
+    image: '/assets/project-cargo.jpg',
+    imageCaption: 'Expert handling of oversized and complex cargo projects.',
+    features: [
+      {
+        title: 'Heavy Lift Capabilities',
+        description: 'Specialized equipment for oversized and overweight cargo.'
+      },
+      {
+        title: 'Route Planning',
+        description: 'Detailed feasibility studies and route surveys for complex moves.'
+      },
+      {
+        title: 'Project Management',
+        description: 'Dedicated project managers for end-to-end coordination.'
+      },
+      {
+        title: 'Engineering Support',
+        description: 'Technical expertise for loading, securing, and transporting cargo.'
+      }
+    ]
+  }
+];
+---
+
+<section class="service-detail-section">
+  <div class="service-container">
+    <!-- Sidebar Navigation -->
+    <aside class="service-sidebar">
+      {services.map((service, index) => (
+        <button 
+          class={`sidebar-item ${index === 0 ? 'active' : ''}`}
+          data-service={service.id}
+        >
+          {service.name}
+        </button>
+      ))}
+    </aside>
+
+    <!-- Main Content -->
+    <div class="service-content">
+      {services.map((service, index) => (
+        <div class={`service-panel ${index === 3 ? 'active' : ''}`} data-panel={service.id}>
+          <!-- Hero Section with Image -->
+          <div class="content-hero">
+            <div class="hero-text">
+              <h1>{service.title}</h1>
+              <p>{service.description}</p>
+            </div>
+            <div class="hero-image">
+              <img src={service.image} alt={service.title} />
+              <div class="image-caption">
+                {service.imageCaption}
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Features Section -->
+          <div class="features-section">
+            <h2 class="features-title">Key Features</h2>
+            <div class="features-grid">
+              {service.features.map(feature => (
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i class="bi bi-check"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h3>{feature.title}</h3>
+                    <p>{feature.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+    import '../scripts/tabla'
+</script>

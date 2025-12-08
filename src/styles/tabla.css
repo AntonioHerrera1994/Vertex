@@ -1,0 +1,252 @@
+ .service-detail-section {
+    padding: 60px 20px;
+    background: #fff;
+  }
+
+  .service-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 60px;
+  }
+
+  /* Sidebar */
+  .service-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .sidebar-item {
+    padding: 18px 24px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: none;
+    color: #1a1a1a;
+    font-family: "Manrope", Sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+  }
+
+  .sidebar-item:hover {
+    background: #e9ecef;
+    transform: translateX(5px);
+  }
+
+  .sidebar-item.active {
+    background: #ff5722;
+    color: white;
+  }
+
+  /* Main Content */
+  .service-content {
+    position: relative;
+  }
+
+  .service-panel {
+    display: none;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .service-panel.active {
+    display: flex;
+    animation: fadeIn 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Hero Section */
+  .content-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+
+  .hero-text h1 {
+    font-family: "Manrope", Sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+  }
+
+  .hero-text p {
+    font-family: "Manrope", Sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #6c757d;
+  }
+
+  .hero-image {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+  }
+
+  .image-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: #ff5722;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    font-family: "Manrope", Sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  /* Features Section */
+  .features-section {
+    margin-top: 20px;
+  }
+
+  .features-title {
+    font-family: "Manrope", Sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #1a1a1a;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .feature-item {
+    display: flex;
+    gap: 20px;
+    align-items: start;
+  }
+
+  .feature-icon {
+    flex-shrink: 0;
+    width: 70px;
+    height: 70px;
+    background: #1a1a1a;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .feature-icon i {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+  }
+
+  .feature-content h3 {
+    font-family: "Manrope", Sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+  }
+
+  .feature-content p {
+    font-family: "Manrope", Sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #6c757d;
+    margin: 0;
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .service-container {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .service-sidebar {
+      flex-direction: row;
+      overflow-x: auto;
+      gap: 10px;
+      padding-bottom: 10px;
+    }
+
+    .sidebar-item {
+      white-space: nowrap;
+      padding: 14px 20px;
+      font-size: 1rem;
+    }
+
+    .sidebar-item:hover {
+      transform: translateX(0);
+      transform: translateY(-2px);
+    }
+
+    .content-hero {
+      grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .service-detail-section {
+      padding: 40px 20px;
+    }
+
+    .hero-text h1 {
+      font-size: 2rem;
+    }
+
+    .hero-text p {
+      font-size: 1rem;
+    }
+
+    .features-title {
+      font-size: 2rem;
+    }
+
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+    }
+
+    .feature-icon i {
+      font-size: 1.5rem;
+    }
+
+    .feature-content h3 {
+      font-size: 1.25rem;
+    }
+
+    .image-caption {
+      font-size: 0.9rem;
+      padding: 15px;
+    }
+  }

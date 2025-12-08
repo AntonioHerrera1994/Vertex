@@ -161,7 +161,7 @@
   }
 
   /* Responsive */
-  @media (max-width: 801px) {
+  @media (max-width: 801px){
     .faqs-section {
       padding: 60px 20px;
     }
@@ -185,7 +185,7 @@
 
   .faqs-header h4 {
    text-align: center;
-  
+  }
   
 
     .tabs-wrapper {
