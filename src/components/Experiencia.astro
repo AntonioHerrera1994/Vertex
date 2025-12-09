@@ -1,0 +1,52 @@
+---
+import '../styles/experiencia.css'
+// ExpertiseSection.astro
+const expertise = [
+  { name: 'Freight Forwarding', percentage: 100 },
+  { name: 'Customs Clearance', percentage: 100 },
+  { name: 'Warehousing & Distribution', percentage: 100 }
+];
+
+const stats = [
+  { value: '65250+', label: 'Containers Shipped' },
+  { value: '23160+', label: 'Satisfied Clients' },
+  { value: '150+', label: 'Global Shipping Partners' },
+  { value: '20+', label: 'Years of Experience' }
+];
+---
+
+<section class="expertise-section">
+  <div class="expertise-container">
+    <!-- Left Side: Expertise Bars -->
+    <div class="expertise-bars">
+      <h2 class="expertise-title">Our Expertise</h2>
+      
+      {expertise.map(item => (
+        <div class="expertise-item">
+          <div class="expertise-header">
+            <span class="expertise-name">{item.name}</span>
+            <span class="expertise-percentage">{item.percentage}%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style={`width: ${item.percentage}%`}></div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Right Side: Stats Grid -->
+    <div class="stats-grid">
+      {stats.map(stat => (
+        <div class="stat-item">
+          <h3 class="stat-value">{stat.value}</h3>
+          <p class="stat-label">{stat.label}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+<script>
+import '../scripts/exp'
+</script>

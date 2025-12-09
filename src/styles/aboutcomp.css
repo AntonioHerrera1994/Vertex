@@ -1,0 +1,162 @@
+ .about-section {
+    padding: 80px 20px;
+    background: #fff;
+  }
+
+  .about-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  /* Images Section */
+  .about-images {
+    position: relative;
+    min-height: 500px;
+  }
+
+  .image-large {
+    position: relative;
+    width: 85%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .image-large img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .image-small {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  .image-small img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Content Section */
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-label {
+    font-family: "Manrope", Sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ff5722;
+    text-transform: capitalize;
+  }
+
+  .about-title {
+    font-family: "Manrope", Sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1a1a1a;
+    margin: 0;
+  }
+
+  .about-description {
+    font-family: "Manrope", Sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #6c757d;
+    margin: 0;
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .about-container {
+      grid-template-columns: 1fr;
+      gap: 60px;
+    }
+
+    .about-images {
+      min-height: 400px;
+    }
+
+    .about-title {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .about-section {
+      padding: 60px 20px;
+    }
+
+    .about-container {
+      gap: 50px;
+    }
+
+    .about-images {
+      min-height: 350px;
+    }
+
+    .image-large {
+      width: 80%;
+      border-radius: 16px;
+    }
+
+    .image-small {
+      width: 55%;
+      border-radius: 16px;
+    }
+
+    .about-title {
+      font-size: 2rem;
+    }
+
+    .about-description {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .about-section {
+      padding: 40px 15px;
+    }
+
+    .about-images {
+      min-height: 300px;
+    }
+
+    .image-large {
+      width: 75%;
+      border-radius: 12px;
+    }
+
+    .image-small {
+      width: 50%;
+      border-radius: 12px;
+    }
+
+    .about-label {
+      font-size: 1rem;
+    }
+
+    .about-title {
+      font-size: 1.75rem;
+    }
+
+    .about-description {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+  }

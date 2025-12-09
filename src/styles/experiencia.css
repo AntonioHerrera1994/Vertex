@@ -1,0 +1,174 @@
+.expertise-section {
+    padding: 80px 20px;
+    background: #fff;
+  }
+
+  .expertise-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  /* Expertise Bars */
+  .expertise-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .expertise-title {
+    font-family: "Manrope", Sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 20px 0;
+  }
+
+  .expertise-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .expertise-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .expertise-name {
+    font-family: "Manrope", Sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #1a1a1a;
+  }
+
+  .expertise-percentage {
+    font-family: "Manrope", Sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #6c757d;
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 12px;
+    background: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: #ff5722;
+    border-radius: 10px;
+    transition: width 1s ease-out;
+  }
+
+  /* Stats Grid */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .stat-item {
+    text-align: center;
+  }
+
+  .stat-value {
+    font-family: "Manrope", Sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 10px 0;
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-family: "Manrope", Sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #6c757d;
+    margin: 0;
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .expertise-container {
+      grid-template-columns: 1fr;
+      gap: 60px;
+    }
+
+    .expertise-title {
+      font-size: 2.5rem;
+    }
+
+    .stat-value {
+      font-size: 3rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .expertise-section {
+      padding: 60px 20px;
+    }
+
+    .expertise-title {
+      font-size: 2rem;
+    }
+
+    .expertise-name {
+      font-size: 1.1rem;
+    }
+
+    .expertise-percentage {
+      font-size: 1rem;
+    }
+
+    .stats-grid {
+      gap: 30px;
+    }
+
+    .stat-value {
+      font-size: 2.5rem;
+    }
+
+    .stat-label {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .expertise-section {
+      padding: 40px 15px;
+    }
+
+    .expertise-bars {
+      gap: 30px;
+    }
+
+    .expertise-title {
+      font-size: 1.75rem;
+    }
+
+    .expertise-name {
+      font-size: 1rem;
+    }
+
+    .stats-grid {
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+
+    .stat-value {
+      font-size: 2rem;
+    }
+
+    .stat-label {
+      font-size: 0.95rem;
+    }
+  }
