@@ -86,11 +86,13 @@
     font-weight: 700;
     margin-bottom: 10px;
     line-height: 1.2;
+      font-family: "Manrope", Sans-serif;
   }
 
   .carousel-text p {
     font-size: 1.25rem;
     opacity: 0.9;
+    font-family: "Manrope", Sans-serif;
   }
 
   /* Navigation Buttons */

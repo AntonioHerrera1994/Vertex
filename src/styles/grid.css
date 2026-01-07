@@ -1,41 +1,144 @@
-.primercuadro{
+.primercuadro {
     margin: 0 20px;
     background-image: url('../assets/video.webp');
     height: 70vh;
     background-position: center;
     background-size: cover;
-    border-radius: 20px ;
+    border-radius: 20px;
 }
 
-.cuadros-2{
+.cuadros-2 {
     display: grid;
-   grid-template-columns: repeat(2, minmax(0,1fr));
-   gap: 20px;
-   height: 80vh;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    height: 80vh;
     margin: 20px 20px;
 }
 
-.primero{
+.primero {
     background-color: #F85C00;
- border-radius: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
 }
 
-.segundo{
+.primero-content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.primero-label {
+    font-family: "Manrope", Sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+.primero-title {
+    font-family: "Manrope", Sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+    color: white;
+}
+
+.primero-description {
+    font-family: "Manrope", Sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin: 0;
+    color: white;
+    opacity: 0.95;
+}
+
+.primero-button {
+    display: inline-block;
+    padding: 16px 40px;
+    background: white;
+    color: #F85C00;
+    text-decoration: none;
+    border-radius: 50px;
+    font-family: "Manrope", Sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+
+.primero-button:hover {
+    background: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.segundo {
     background-image: url('../assets/segunda.png');
     background-position: center;
     background-size: cover;
     border-radius: 20px;
 }
 
-@media screen and (max-width:801px){
-    .primercuadro{
-  
-    height: 45vh;
-  
+@media screen and (max-width: 801px) {
+    .primercuadro {
+        height: 45vh;
+    }
 
-}
-    .cuadros-2{
+    .cuadros-2 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        height: auto;
+    }
 
-   grid-template-columns: repeat(1, minmax(0,1fr));
+    .primero {
+        padding: 40px 30px;
+        min-height: 60vh;
+    }
+
+    .primero-title {
+        font-size: 2rem;
+    }
+
+    .primero-description {
+        font-size: 1rem;
+    }
+
+    .primero-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .segundo {
+        min-height: 50vh;
+    }
 }
+
+@media screen and (max-width: 480px) {
+    .primero {
+        padding: 30px 20px;
+    }
+
+    .primero-label {
+        font-size: 0.85rem;
+    }
+
+    .primero-title {
+        font-size: 1.75rem;
+    }
+
+    .primero-description {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .primero-button {
+        padding: 14px 30px;
+        font-size: 1rem;
+    }
 }

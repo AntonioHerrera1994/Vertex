@@ -19,12 +19,12 @@
     .features-section h2{
             color: black;
     font-family: "Manrope", Sans-serif;
-    font-size: 56px;
+    font-size: 52px;
     font-weight: 500;
     line-height: 1.3em;
     letter-spacing: -0.015em;
     text-align: center;
-    text-transform: capitalize;
+
     margin: 0;
     margin-bottom: 50px;
     }
@@ -64,6 +64,7 @@
     margin-bottom: 12px;
     color: #1a1a1a;
      font-family: "Manrope", Sans-serif;
+     margin-top: -2px;
   }
 
   .feature-content p {
@@ -71,6 +72,7 @@
     line-height: 1.6;
     color: #6c757d;
      font-family: "Manrope", Sans-serif;
+     text-align: justify;
   }
 
   /* Responsive */

@@ -1,7 +1,7 @@
 .hero-carousel {
     position: relative;
     width: calc(100% - 40px);
-    height: 90vh;
+    height: 95vh;
     min-height: 500px;
     margin: 17px auto;
     border-radius: 20px;
@@ -69,7 +69,7 @@
 
   .content h1 {
       font-family: "Manrope", Sans-serif;
-    font-size: 64px;
+    font-size: 62px;
     font-weight: 500;
     text-transform: uppercase;
     line-height: 1.15em;
@@ -83,6 +83,7 @@
     margin: 0px 0px 40px 0px;
     line-height: 27px;
     font-size: 18px;
+    text-align: justify;
   }
 
   .cta-button {

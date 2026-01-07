@@ -5,8 +5,9 @@
 
 .grid-serv{
     display: grid;
-    grid-template-columns: repeat(4, minmax(0,1fr));
+    grid-template-columns: repeat(3, minmax(0,1fr));
     gap: 60px;
+    margin-top: 50px;
 }
 
  .serv-cont h4{
@@ -20,12 +21,12 @@
     .serv-cont h2{
             color: black;
     font-family: "Manrope", Sans-serif;
-    font-size: 56px;
+    font-size: 52px;
     font-weight: 500;
     line-height: 1.3em;
     letter-spacing: -0.015em;
     text-align: center;
-    text-transform: capitalize;
+   
     margin: 0;
     }
 
@@ -42,6 +43,7 @@
     font-weight: 500;
     line-height: 1.9em;
     color: rgba(0, 0, 0, 0.573);
+    text-align: justify;
     }
 
     .elemento img{

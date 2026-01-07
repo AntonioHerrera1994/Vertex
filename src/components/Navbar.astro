@@ -1,6 +1,7 @@
 ---
 import '../styles/navbar.css'
-// Navbar.astro
+import Logo from '../assets/logo.png'
+
 
 const navLinks = [
   { name: 'Inicio', href: '/' },
@@ -25,7 +26,8 @@ const services = [
   <div class="navbar-container">
     <!-- Logo -->
     <a href="/" class="logo">
-     <h3>vertex</h3>
+     <img
+     src={Logo.src}>
     </a>
 
     <!-- Desktop Menu -->
@@ -38,7 +40,7 @@ const services = [
     </ul>
 
     <!-- Desktop CTA Button -->
-    <a href="/contact" class="cta-btn desktop-cta">Book Shipment</a>
+    <a href="/contact" class="cta-btn desktop-cta">Cotizar un servicio</a>
 
     <!-- Hamburger Button -->
     <button class="hamburger" aria-label="Toggle menu">
