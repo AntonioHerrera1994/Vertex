@@ -1,7 +1,7 @@
 .hero-carousel {
     position: relative;
     width: calc(100% - 40px);
-    height: 95vh;
+    height: 96vh;
     min-height: 500px;
     margin: 17px auto;
     border-radius: 20px;
