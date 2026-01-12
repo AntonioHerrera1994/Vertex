@@ -25,36 +25,6 @@
     display: block;
     border-radius: 20px;
   }
-
-  .years-badge {
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #ff5722;
-    color: white;
-    padding: 30px 40px;
-    border-radius: 16px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(255, 87, 34, 0.3);
-  }
-
-  .badge-number {
-    display: block;
-    font-family: "Manrope", Sans-serif;
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1;
-    margin-bottom: 8px;
-  }
-
-  .badge-text {
-    display: block;
-    font-family: "Manrope", Sans-serif;
-    font-size: 1.1rem;
-    font-weight: 600;
-  }
-
   /* Content */
   .content-wrapper {
     display: flex;
@@ -82,7 +52,7 @@
   .cta-button {
     display: inline-block;
     padding: 18px 40px;
-    background: #ff5722;
+    background: #ff5722!important;
     color: white;
     text-decoration: none;
     border-radius: 50px;
@@ -97,6 +67,7 @@
     background: #ff7043;
     transform: translateY(-2px);
     box-shadow: 0 10px 30px rgba(255, 87, 34, 0.4);
+    color: white!important;
   }
 
   .section-description {
@@ -105,6 +76,7 @@
     line-height: 1.8;
     color: #6c757d;
     margin: 0;
+    text-align: justify;
   }
 
   /* Responsive */
@@ -135,21 +107,6 @@
     .image-wrapper img {
       border-radius: 16px;
     }
-
-    .years-badge {
-      bottom: 30px;
-      padding: 25px 35px;
-      border-radius: 12px;
-    }
-
-    .badge-number {
-      font-size: 3rem;
-    }
-
-    .badge-text {
-      font-size: 1rem;
-    }
-
     .section-title {
       font-size: 2rem;
     }
@@ -176,20 +133,6 @@
     .image-wrapper img {
       border-radius: 12px;
     }
-
-    .years-badge {
-      bottom: 20px;
-      padding: 20px 30px;
-    }
-
-    .badge-number {
-      font-size: 2.5rem;
-    }
-
-    .badge-text {
-      font-size: 0.9rem;
-    }
-
     .section-label {
       font-size: 1rem;
     }

@@ -2,16 +2,16 @@
 import '../styles/experiencia.css'
 // ExpertiseSection.astro
 const expertise = [
-  { name: 'Freight Forwarding', percentage: 100 },
-  { name: 'Customs Clearance', percentage: 100 },
-  { name: 'Warehousing & Distribution', percentage: 100 }
+  { name: 'Transporte de Carga', percentage: 100 },
+  { name: 'Gestión Aduanera', percentage: 100 },
+  { name: 'Almacenamiento y Distribuciónn', percentage: 100 }
 ];
 
 const stats = [
-  { value: '65250+', label: 'Containers Shipped' },
-  { value: '23160+', label: 'Satisfied Clients' },
-  { value: '150+', label: 'Global Shipping Partners' },
-  { value: '20+', label: 'Years of Experience' }
+  { value: '+1500', label: 'Operaciones Completadas' },
+{ value: '+150', label: 'Empresas Atendidas' },
+{ value: '+25', label: 'Alianzas Globales' },
+{ value: '+32', label: 'Años de Trayectoria' }
 ];
 ---
 
@@ -19,7 +19,7 @@ const stats = [
   <div class="expertise-container">
     <!-- Left Side: Expertise Bars -->
     <div class="expertise-bars">
-      <h2 class="expertise-title">Our Expertise</h2>
+      <h2 class="expertise-title">Nuestra Experiencia</h2>
       
       {expertise.map(item => (
         <div class="expertise-item">

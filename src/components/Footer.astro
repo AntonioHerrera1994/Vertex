@@ -1,22 +1,21 @@
 ---
 import '../styles/footer.css'
+import Logo from '../assets/logo.png'
 
 const services = [
-  { name: 'Air Freight', href: '/services/air-freight' },
-  { name: 'Truck Freight', href: '/services/truck-freight' },
-  { name: 'Warehousing', href: '/services/warehousing' },
-  { name: 'Rail Freight', href: '/services/rail-freight' },
-  { name: 'Ship freight', href: '/services/ship-freight' },
-  { name: 'Customs Brokerage', href: '/services/customs-brokerage' }
+  { name: 'Transporte Aéreo', href: '/servicios' },
+  { name: 'Transporte Marítimo', href: '/servicios' },
+  { name: 'Transporte Terrestre', href: '/servicios' },
+  { name: 'Correduría de Aduanas', href: '/servicios' },
+  { name: 'Entrega de Última Milla', href: '/servicios' },
+  { name: 'Carga de Poryectos', href: '/servicios' }
 ];
 
 const company = [
-  { name: 'Home', href: '/' },
-  { name: 'About us', href: '/about' },
-  { name: 'Our team', href: '/team' },
-  { name: 'Careers', href: '/careers' },
-  { name: 'Blog', href: '/blog' },
-  { name: 'Contact', href: '/contact' }
+  { name: 'Inicio', href: '/' },
+  { name: 'Nosotros', href: '/nosotros' },
+  { name: 'Servicios', href: '/servicios' },
+  { name: 'Contacto', href: '/contacto' }
 ];
 
 const socialLinks = [
@@ -34,10 +33,12 @@ const socialLinks = [
       <!-- Column 1: Logo, Services & Social -->
       <div class="footer-column">
         <div class="footer-logo">
-          <img src="/logo.svg" alt="LogiXpress" />
+           <img
+     src={Logo.src}>
+    </a>
         </div>
         
-        <h3 class="footer-title">Services</h3>
+        <h3 class="footer-title">Servicios</h3>
         <ul class="footer-links">
           {services.map(service => (
             <li><a href={service.href}>{service.name}</a></li>
@@ -79,7 +80,7 @@ const socialLinks = [
 
       <!-- Column 2: Company -->
       <div class="footer-column">
-        <h3 class="footer-title">Company</h3>
+        <h3 class="footer-title">Menú</h3>
         <ul class="footer-links">
           {company.map(link => (
             <li><a href={link.href}>{link.name}</a></li>
@@ -89,21 +90,21 @@ const socialLinks = [
 
       <!-- Column 3: Get in Touch -->
       <div class="footer-column">
-        <h3 class="footer-title">Get in Touch</h3>
+        <h3 class="footer-title">Contáctenos</h3>
         
         <div class="contact-info">
           <div class="contact-item">
-            <span class="contact-label">Email</span>
+            <span class="contact-label">Correo</span>
             <a href="mailto:contact@logixpress.com" class="contact-value">contact@logixpress.com</a>
           </div>
 
           <div class="contact-item">
-            <span class="contact-label">Phone</span>
+            <span class="contact-label">Teléfono</span>
             <a href="tel:+9293339296" class="contact-value">+929 333 9296</a>
           </div>
 
           <div class="contact-item">
-            <span class="contact-label">Office Location</span>
+            <span class="contact-label">Ubicación</span>
             <p class="contact-value">100 S Main St, New York, NY</p>
           </div>
         </div>
@@ -114,7 +115,7 @@ const socialLinks = [
   <!-- Copyright Bar -->
   <div class="footer-bottom">
     <div class="footer-container">
-      <p>Copyright 2025 LogiXpress by Reacthemes</p>
+      <p>Vertex 2026. Todos los derechos reservados.</p>
     </div>
   </div>
 

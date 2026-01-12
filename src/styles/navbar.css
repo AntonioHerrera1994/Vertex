@@ -31,13 +31,13 @@
 
   /* Logo */
   .logo img {
-    height: 67px;
+    height: 70px;
     width: auto;
     transition: height 0.3s ease;
   }
 
   .navbar.scrolled .logo img {
-    height: 50px;
+    height: 70px;
   }
 
   /* Desktop Menu */

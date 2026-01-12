@@ -18,214 +18,189 @@ interface Service {
 }
 
 const services: Service[] = [
-  {
-    id: 'air-freight',
-    name: 'Air Freight',
-    title: 'Fast Air Freight Solutions for Global Trade',
-    description: 'Air freight provides the fastest shipping method for time-sensitive cargo, connecting businesses worldwide. From express shipments to specialized handling, we manage every aspect of air transportation—booking, customs clearance, tracking, and final delivery.',
-    image: '/assets/air-freight.jpg',
-    imageCaption: 'Trusted air freight solutions for urgent deliveries worldwide.',
-    features: [
-      {
-        title: 'Express Delivery',
-        description: 'Fast shipping options for time-critical cargo with guaranteed delivery times.'
-      },
-      {
-        title: 'Global Coverage',
-        description: 'Access to major airports worldwide ensuring seamless connections.'
-      },
-      {
-        title: 'Real-Time Tracking',
-        description: 'Monitor your shipments 24/7 with advanced tracking technology.'
-      },
-      {
-        title: 'Specialized Handling',
-        description: 'Expert handling for temperature-sensitive and fragile cargo.'
-      }
-    ]
-  },
-  {
-    id: 'rail-freight',
-    name: 'Rail Freight',
-    title: 'Cost-Effective Rail Freight Services',
-    description: 'Rail freight offers an economical and environmentally friendly solution for moving large volumes of goods. Our rail services connect major trade routes across continents, providing reliable and sustainable transportation.',
-    image: '/assets/rail-freight.jpg',
-    imageCaption: 'Efficient rail freight solutions for bulk cargo transportation.',
-    features: [
-      {
-        title: 'Eco-Friendly Transport',
-        description: 'Reduce carbon footprint with sustainable rail transportation.'
-      },
-      {
-        title: 'Large Volume Capacity',
-        description: 'Move bulk cargo efficiently with high-capacity rail services.'
-      },
-      {
-        title: 'Continental Networks',
-        description: 'Access extensive rail networks across major trade corridors.'
-      },
-      {
-        title: 'Cost Efficiency',
-        description: 'Lower transportation costs for non-urgent bulk shipments.'
-      }
-    ]
-  },
-  {
-    id: 'ship-freight',
-    name: 'Ship Freight',
-    title: 'Reliable Ship Freight Services for Global Trade',
-    description: 'Ocean freight remains the backbone of international logistics, offering businesses a cost-efficient way to move goods worldwide. From full container loads to specialized cargo, we manage every aspect of the shipping process.',
-    image: '/assets/ship-freight.jpg',
-    imageCaption: 'Trusted ship freight solutions for international trade.',
-    features: [
-      {
-        title: 'Full Container Loads',
-        description: 'Dedicated containers for large shipments with door-to-door service.'
-      },
-      {
-        title: 'Consolidated Shipping',
-        description: 'Cost-effective LCL options for smaller cargo volumes.'
-      },
-      {
-        title: 'Port-to-Port Service',
-        description: 'Reliable connections between major ports worldwide.'
-      },
-      {
-        title: 'Customs Expertise',
-        description: 'Complete documentation and customs clearance support.'
-      }
-    ]
-  },
-  {
-    id: 'trucking',
-    name: 'Trucking',
-    title: 'Reliable Trucking Freight Services for Global Trade',
-    description: 'Ocean freight remains the backbone of international logistics, offering businesses a cost-efficient way to move goods worldwide. From full container loads to specialized cargo, we manage every aspect of the shipping process—documentation, customs clearance, port handling, and final delivery. Our team ensures smooth, timely, and secure transportation so your business can grow without borders.',
-    image: '/assets/trucking.jpg',
-    imageCaption: 'Trusted ship freight solutions tailored to move your cargo safely across global trade routes.',
-    features: [
-      {
-        title: 'Global Shipping Network',
-        description: 'With access to key ports, we ensure seamless freight connections across Asia, Europe, the Americas, and the Middle East.'
-      },
-      {
-        title: 'On-Time Delivery',
-        description: 'We prioritize scheduling and routing efficiency to ensure your shipments arrive on time, every time, without costly delays.'
-      },
-      {
-        title: 'Transparent Pricing Policy',
-        description: 'Our pricing is clear and competitive with no hidden fees, ensuring complete cost transparency for your business.'
-      },
-      {
-        title: 'Special Cargo Handling',
-        description: 'We have the expertise and equipment to handle oversized, hazardous, and temperature-controlled cargo with care.'
-      }
-    ]
-  },
-  {
-    id: 'warehousing',
-    name: 'Warehousing',
-    title: 'Secure Warehousing and Distribution Services',
-    description: 'Our warehousing solutions provide secure storage and efficient distribution for your inventory. From short-term storage to long-term fulfillment, we manage your goods with precision.',
-    image: '/assets/warehousing.jpg',
-    imageCaption: 'State-of-the-art warehousing facilities for your inventory.',
-    features: [
-      {
-        title: 'Secure Storage',
-        description: '24/7 monitored facilities with advanced security systems.'
-      },
-      {
-        title: 'Inventory Management',
-        description: 'Real-time tracking and management of your stored goods.'
-      },
-      {
-        title: 'Flexible Solutions',
-        description: 'Short-term and long-term storage options to fit your needs.'
-      },
-      {
-        title: 'Distribution Services',
-        description: 'Efficient order fulfillment and last-mile delivery coordination.'
-      }
-    ]
-  },
-  {
-    id: 'custom-brokerage',
-    name: 'Custom Brokerage',
-    title: 'Expert Customs Brokerage Services',
-    description: 'Navigate complex customs regulations with our expert brokerage services. We handle all documentation, duties, and compliance requirements to ensure smooth border crossings.',
-    image: '/assets/customs.jpg',
-    imageCaption: 'Professional customs clearance for international shipments.',
-    features: [
-      {
-        title: 'Customs Compliance',
-        description: 'Expert guidance on international trade regulations and requirements.'
-      },
-      {
-        title: 'Documentation Support',
-        description: 'Complete preparation of all required customs paperwork.'
-      },
-      {
-        title: 'Duty Calculation',
-        description: 'Accurate assessment of duties, taxes, and fees.'
-      },
-      {
-        title: 'Fast Clearance',
-        description: 'Expedited processing to minimize border delays.'
-      }
-    ]
-  },
-  {
-    id: 'last-mile',
-    name: 'Last Mile Delivery',
-    title: 'Efficient Last Mile Delivery Solutions',
-    description: 'Complete the final leg of your supply chain with our reliable last mile delivery services. We ensure your products reach customers quickly and safely.',
-    image: '/assets/last-mile.jpg',
-    imageCaption: 'Fast and reliable last mile delivery to your customers.',
-    features: [
-      {
-        title: 'Same-Day Delivery',
-        description: 'Urgent delivery options for time-sensitive shipments.'
-      },
-      {
-        title: 'Route Optimization',
-        description: 'Efficient routing for faster deliveries and lower costs.'
-      },
-      {
-        title: 'Proof of Delivery',
-        description: 'Digital signatures and photo confirmation for every delivery.'
-      },
-      {
-        title: 'Customer Communication',
-        description: 'Real-time updates and notifications for recipients.'
-      }
-    ]
-  },
-  {
-    id: 'project-cargo',
-    name: 'Project Cargo',
-    title: 'Specialized Project Cargo Solutions',
-    description: 'Handle complex, oversized, and heavy cargo with our specialized project logistics services. We provide customized solutions for unique transportation challenges.',
-    image: '/assets/project-cargo.jpg',
-    imageCaption: 'Expert handling of oversized and complex cargo projects.',
-    features: [
-      {
-        title: 'Heavy Lift Capabilities',
-        description: 'Specialized equipment for oversized and overweight cargo.'
-      },
-      {
-        title: 'Route Planning',
-        description: 'Detailed feasibility studies and route surveys for complex moves.'
-      },
-      {
-        title: 'Project Management',
-        description: 'Dedicated project managers for end-to-end coordination.'
-      },
-      {
-        title: 'Engineering Support',
-        description: 'Technical expertise for loading, securing, and transporting cargo.'
-      }
-    ]
-  }
+{
+  id: 'air-freight',
+  name: 'Transporte Aéreo',
+  title: 'Soluciones Rápidas de Carga Aérea para Comercio Global',
+  description: 'El transporte aéreo ofrece el método de envío más rápido para carga urgente, conectando empresas en todo el mundo. Desde envíos express hasta manejo especializado, gestionamos cada aspecto del transporte aéreo: reservas, despacho aduanal, rastreo y entrega final.',
+  image: '/assets/serv1.webp',
+  imageCaption: 'Soluciones confiables de carga aérea para entregas urgentes en todo el mundo.',
+  features: [
+    {
+      title: 'Entrega Express',
+      description: 'Opciones de envío rápido para carga urgente con tiempos de entrega garantizados.'
+    },
+    {
+      title: 'Cobertura Global',
+      description: 'Acceso a los principales aeropuertos del mundo garantizando conexiones sin interrupciones.'
+    },
+    {
+      title: 'Rastreo en Tiempo Real',
+      description: 'Monitoree sus envíos 24/7 con tecnología de rastreo avanzada.'
+    },
+    {
+      title: 'Manejo Especializado',
+      description: 'Gestión experta para carga sensible a temperatura y mercancía frágil.'
+    }
+  ]
+},
+
+{
+  id: 'ship-freight',
+  name: 'Transporte Marítimo',
+  title: 'Servicios Confiables de Carga Marítima para Comercio Global',
+  description: 'El transporte marítimo sigue siendo la columna vertebral de la logística internacional, ofreciendo a las empresas una forma rentable de mover mercancías a nivel mundial. Desde contenedores completos hasta carga especializada, gestionamos cada aspecto del proceso de envío.',
+  image: '/assets/serv2.webp',
+  imageCaption: 'Soluciones confiables de carga marítima para comercio internacional.',
+  features: [
+    {
+      title: 'Contenedores Completos (FCL)',
+      description: 'Contenedores dedicados para grandes envíos con servicio puerta a puerta.'
+    },
+    {
+      title: 'Carga Consolidada (LCL)',
+      description: 'Opciones rentables de carga compartida para volúmenes menores.'
+    },
+    {
+      title: 'Servicio Puerto a Puerto',
+      description: 'Conexiones confiables entre los principales puertos del mundo.'
+    },
+    {
+      title: 'Experiencia Aduanal',
+      description: 'Soporte completo en documentación y despacho aduanal.'
+    }
+  ]
+},
+{
+  id: 'trucking',
+  name: 'Transporte Terrestre',
+  title: 'Servicios Confiables de Transporte Terrestre para Comercio Global',
+  description: 'El transporte terrestre ofrece flexibilidad y eficiencia para mover mercancías a nivel nacional e internacional. Desde cargas completas hasta envíos parciales, gestionamos cada aspecto del transporte por carretera: documentación, despacho aduanal, coordinación de rutas y entrega final. Nuestro equipo garantiza un transporte fluido, puntual y seguro para que su negocio crezca sin límites.',
+  image: '/assets/serv3.webp',
+  imageCaption: 'Soluciones confiables de transporte terrestre diseñadas para mover su carga de forma segura en rutas comerciales globales.',
+  features: [
+    {
+      title: 'Red Global de Distribución',
+      description: 'Con acceso a rutas terrestres clave, garantizamos conexiones fluidas en Asia, Europa, América y Medio Oriente.'
+    },
+    {
+      title: 'Entregas Puntuales',
+      description: 'Priorizamos la eficiencia en programación y ruteo para asegurar que sus envíos lleguen a tiempo, siempre, sin retrasos costosos.'
+    },
+    {
+      title: 'Política de Precios Transparente',
+      description: 'Nuestras tarifas son claras y competitivas sin cargos ocultos, garantizando total transparencia de costos para su negocio.'
+    },
+    {
+      title: 'Manejo de Carga Especial',
+      description: 'Contamos con la experiencia y equipo para manejar carga sobredimensionada, peligrosa y con temperatura controlada con cuidado.'
+    }
+  ]
+},
+{
+  id: 'warehousing',
+  name: 'Almacenamiento',
+  title: 'Servicios Seguros de Almacenamiento y Distribución',
+  description: 'Nuestras soluciones de almacenamiento proporcionan resguardo seguro y distribución eficiente para su inventario. Desde almacenaje de corto plazo hasta fulfillment de largo plazo, gestionamos sus mercancías con precisión.',
+  image: '/assets/serv4.webp',
+  imageCaption: 'Instalaciones de almacenamiento de última generación para su inventario.',
+  features: [
+    {
+      title: 'Almacenamiento Seguro',
+      description: 'Instalaciones monitoreadas 24/7 con sistemas de seguridad avanzados.'
+    },
+    {
+      title: 'Gestión de Inventario',
+      description: 'Rastreo y administración en tiempo real de sus mercancías almacenadas.'
+    },
+    {
+      title: 'Soluciones Flexibles',
+      description: 'Opciones de almacenamiento de corto y largo plazo para satisfacer sus necesidades.'
+    },
+    {
+      title: 'Servicios de Distribución',
+      description: 'Fulfillment de pedidos eficiente y coordinación de entrega de última milla.'
+    }
+  ]
+},
+{
+  id: 'custom-brokerage',
+  name: 'Correduría de Aduanas',
+  title: 'Servicios Expertos de Correduría Aduanal',
+  description: 'Navegue las complejas regulaciones aduanales con nuestros servicios expertos de correduría. Manejamos toda la documentación, aranceles y requisitos de cumplimiento para garantizar cruces fronterizos sin contratiempos.',
+  image: '/assets/serv5.webp',
+  imageCaption: 'Despacho aduanal profesional para envíos internacionales.',
+  features: [
+    {
+      title: 'Cumplimiento Aduanal',
+      description: 'Asesoría experta en regulaciones y requisitos de comercio internacional.'
+    },
+    {
+      title: 'Soporte Documental',
+      description: 'Preparación completa de toda la documentación aduanal requerida.'
+    },
+    {
+      title: 'Cálculo de Aranceles',
+      description: 'Evaluación precisa de aranceles, impuestos y tarifas.'
+    },
+    {
+      title: 'Despacho Rápido',
+      description: 'Procesamiento expedito para minimizar demoras en frontera.'
+    }
+  ]
+},
+{
+  id: 'last-mile',
+  name: 'Entrega de Última Milla',
+  title: 'Soluciones Eficientes de Entrega de Última Milla',
+  description: 'Complete el tramo final de su cadena de suministro con nuestros servicios confiables de entrega de última milla. Garantizamos que sus productos lleguen a los clientes de manera rápida y segura.',
+  image: '/assets/serv6.webp',
+  imageCaption: 'Entrega rápida y confiable de última milla a sus clientes.',
+  features: [
+    {
+      title: 'Entrega el Mismo Día',
+      description: 'Opciones de entrega urgente para envíos urgentes y sensibles al tiempo.'
+    },
+    {
+      title: 'Optimización de Rutas',
+      description: 'Ruteo eficiente para entregas más rápidas y costos reducidos.'
+    },
+    {
+      title: 'Comprobante de Entrega',
+      description: 'Firmas digitales y confirmación fotográfica para cada entrega.'
+    },
+    {
+      title: 'Comunicación con Cliente',
+      description: 'Actualizaciones y notificaciones en tiempo real para los destinatarios.'
+    }
+  ]
+},
+{
+  id: 'project-cargo',
+  name: 'Carga de Proyectos',
+  title: 'Soluciones Especializadas para Carga de Proyectos',
+  description: 'Maneje carga compleja, sobredimensionada y pesada con nuestros servicios especializados de logística de proyectos. Proporcionamos soluciones personalizadas para desafíos únicos de transporte.',
+  image: '/assets/serv7.webp',
+  imageCaption: 'Manejo experto de carga sobredimensionada y proyectos complejos.',
+  features: [
+    {
+      title: 'Capacidad de Carga Pesada',
+      description: 'Equipo especializado para carga sobredimensionada y de gran peso.'
+    },
+    {
+      title: 'Planificación de Rutas',
+      description: 'Estudios detallados de viabilidad y reconocimiento de rutas para movimientos complejos.'
+    },
+    {
+      title: 'Gestión de Proyectos',
+      description: 'Gerentes de proyecto dedicados para coordinación de principio a fin.'
+    },
+    {
+      title: 'Soporte de Ingeniería',
+      description: 'Experiencia técnica para carga, aseguramiento y transporte de mercancía.'
+    }
+  ]
+}
 ];
 ---
 
@@ -261,9 +236,9 @@ const services: Service[] = [
             </div>
           </div>
 
-          <!-- Key Features Section -->
+        
           <div class="features-section">
-            <h2 class="features-title">Key Features</h2>
+            <h2 class="features-title">Características Clave</h2>
             <div class="features-grid">
               {service.features.map(feature => (
                 <div class="feature-item">
