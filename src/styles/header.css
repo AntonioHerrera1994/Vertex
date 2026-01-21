@@ -1,7 +1,7 @@
 .hero-carousel {
     position: relative;
     width: calc(100% - 40px);
-    height: 96vh;
+    height: 100vh;
     min-height: 500px;
     margin: 17px auto;
     border-radius: 20px;
@@ -69,11 +69,12 @@
 
   .content h1 {
       font-family: "Manrope", Sans-serif;
-    font-size: 62px;
+    font-size: 55px;
     font-weight: 500;
     text-transform: uppercase;
     line-height: 1.15em;
     color: white;
+    padding-top: 50px;
   }
 
   .content p {
