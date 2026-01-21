@@ -1,5 +1,5 @@
 .primercuadro {
-    margin: 0 20px;
+    margin: 20px 20px;
     background-image: url('../assets/video.webp');
     height: 70vh;
     background-position: center;
@@ -81,7 +81,7 @@
 }
 
 .segundo {
-    background-image: url('../assets/segunda.png');
+    background-image: url('../assets/vertex8.webp');
     background-position: center;
     background-size: cover;
     border-radius: 20px;
