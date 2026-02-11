@@ -13,6 +13,7 @@
     gap: 20px;
     height: 80vh;
     margin: 20px 20px;
+  
 }
 
 .primero {
@@ -81,7 +82,7 @@
 }
 
 .segundo {
-    background-image: url('../assets/vertex8.webp');
+    background-image: url('../assets/carga-pesada.webp');
     background-position: center;
     background-size: cover;
     border-radius: 20px;

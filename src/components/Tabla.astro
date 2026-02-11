@@ -18,36 +18,9 @@ interface Service {
 }
 
 const services: Service[] = [
-{
-  id: 'air-freight',
-  name: 'Transporte Aéreo',
-  title: 'Soluciones Rápidas de Carga Aérea para Comercio Global',
-  description: 'El transporte aéreo ofrece el método de envío más rápido para carga urgente, conectando empresas en todo el mundo. Desde envíos express hasta manejo especializado, gestionamos cada aspecto del transporte aéreo: reservas, despacho aduanal, rastreo y entrega final.',
-  image: '/assets/serv1.webp',
-  imageCaption: 'Soluciones confiables de carga aérea para entregas urgentes en todo el mundo.',
-  features: [
-    {
-      title: 'Entrega Express',
-      description: 'Opciones de envío rápido para carga urgente con tiempos de entrega garantizados.'
-    },
-    {
-      title: 'Cobertura Global',
-      description: 'Acceso a los principales aeropuertos del mundo garantizando conexiones sin interrupciones.'
-    },
-    {
-      title: 'Rastreo en Tiempo Real',
-      description: 'Monitoree sus envíos 24/7 con tecnología de rastreo avanzada.'
-    },
-    {
-      title: 'Manejo Especializado',
-      description: 'Gestión experta para carga sensible a temperatura y mercancía frágil.'
-    }
-  ]
-},
-
-{
+  {
   id: 'ship-freight',
-  name: 'Transporte Marítimo',
+  name: 'Marítimo',
   title: 'Servicios Confiables de Carga Marítima para Comercio Global',
   description: 'El transporte marítimo sigue siendo la columna vertebral de la logística internacional, ofreciendo a las empresas una forma rentable de mover mercancías a nivel mundial. Desde contenedores completos hasta carga especializada, gestionamos cada aspecto del proceso de envío.',
   image: '/assets/serv2.webp',
@@ -73,7 +46,7 @@ const services: Service[] = [
 },
 {
   id: 'trucking',
-  name: 'Transporte Terrestre',
+  name: 'Terrestre',
   title: 'Servicios Confiables de Transporte Terrestre para Comercio Global',
   description: 'El transporte terrestre ofrece flexibilidad y eficiencia para mover mercancías a nivel nacional e internacional. Desde cargas completas hasta envíos parciales, gestionamos cada aspecto del transporte por carretera: documentación, despacho aduanal, coordinación de rutas y entrega final. Nuestro equipo garantiza un transporte fluido, puntual y seguro para que su negocio crezca sin límites.',
   image: '/assets/serv3.webp',
@@ -94,6 +67,84 @@ const services: Service[] = [
     {
       title: 'Manejo de Carga Especial',
       description: 'Contamos con la experiencia y equipo para manejar carga sobredimensionada, peligrosa y con temperatura controlada con cuidado.'
+    }
+  ]
+},
+{
+  id: 'air-freight',
+  name: 'Aéreo',
+  title: 'Soluciones Rápidas de Carga Aérea para Comercio Global',
+  description: 'El transporte aéreo ofrece el método de envío más rápido para carga urgente, conectando empresas en todo el mundo. Desde envíos express hasta manejo especializado, gestionamos cada aspecto del transporte aéreo: reservas, despacho aduanal, rastreo y entrega final.',
+  image: '/assets/serv1.webp',
+  imageCaption: 'Soluciones confiables de carga aérea para entregas urgentes en todo el mundo.',
+  features: [
+    {
+      title: 'Entrega Express',
+      description: 'Opciones de envío rápido para carga urgente con tiempos de entrega garantizados.'
+    },
+    {
+      title: 'Cobertura Global',
+      description: 'Acceso a los principales aeropuertos del mundo garantizando conexiones sin interrupciones.'
+    },
+    {
+      title: 'Rastreo en Tiempo Real',
+      description: 'Monitoree sus envíos 24/7 con tecnología de rastreo avanzada.'
+    },
+    {
+      title: 'Manejo Especializado',
+      description: 'Gestión experta para carga sensible a temperatura y mercancía frágil.'
+    }
+  ]
+},
+{
+  id: 'project-cargo',
+  name: 'Proyectos',
+  title: 'Soluciones Especializadas para Carga de Proyectos',
+  description: 'Maneje carga compleja, sobredimensionada y pesada con nuestros servicios especializados de logística de proyectos. Proporcionamos soluciones personalizadas para desafíos únicos de transporte.',
+  image: '/assets/serv7.webp',
+  imageCaption: 'Manejo experto de carga sobredimensionada y proyectos complejos.',
+  features: [
+    {
+      title: 'Capacidad de Carga Pesada',
+      description: 'Equipo especializado para carga sobredimensionada y de gran peso.'
+    },
+    {
+      title: 'Planificación de Rutas',
+      description: 'Estudios detallados de viabilidad y reconocimiento de rutas para movimientos complejos.'
+    },
+    {
+      title: 'Gestión de Proyectos',
+      description: 'Gerentes de proyecto dedicados para coordinación de principio a fin.'
+    },
+    {
+      title: 'Soporte de Ingeniería',
+      description: 'Experiencia técnica para carga, aseguramiento y transporte de mercancía.'
+    }
+  ]
+},
+{
+  id: 'custom-brokerage',
+  name: 'Servicios Aduanales',
+  title: 'Servicios Expertos de Correduría Aduanal',
+  description: 'Navegue las complejas regulaciones aduanales con nuestros servicios expertos de correduría. Manejamos toda la documentación, aranceles y requisitos de cumplimiento para garantizar cruces fronterizos sin contratiempos.',
+  image: '/assets/serv5.webp',
+  imageCaption: 'Despacho aduanal profesional para envíos internacionales.',
+  features: [
+    {
+      title: 'Cumplimiento Aduanal',
+      description: 'Asesoría experta en regulaciones y requisitos de comercio internacional.'
+    },
+    {
+      title: 'Soporte Documental',
+      description: 'Preparación completa de toda la documentación aduanal requerida.'
+    },
+    {
+      title: 'Cálculo de Aranceles',
+      description: 'Evaluación precisa de aranceles, impuestos y tarifas.'
+    },
+    {
+      title: 'Despacho Rápido',
+      description: 'Procesamiento expedito para minimizar demoras en frontera.'
     }
   ]
 },
@@ -124,36 +175,10 @@ const services: Service[] = [
   ]
 },
 {
-  id: 'custom-brokerage',
-  name: 'Correduría de Aduanas',
-  title: 'Servicios Expertos de Correduría Aduanal',
-  description: 'Navegue las complejas regulaciones aduanales con nuestros servicios expertos de correduría. Manejamos toda la documentación, aranceles y requisitos de cumplimiento para garantizar cruces fronterizos sin contratiempos.',
-  image: '/assets/serv5.webp',
-  imageCaption: 'Despacho aduanal profesional para envíos internacionales.',
-  features: [
-    {
-      title: 'Cumplimiento Aduanal',
-      description: 'Asesoría experta en regulaciones y requisitos de comercio internacional.'
-    },
-    {
-      title: 'Soporte Documental',
-      description: 'Preparación completa de toda la documentación aduanal requerida.'
-    },
-    {
-      title: 'Cálculo de Aranceles',
-      description: 'Evaluación precisa de aranceles, impuestos y tarifas.'
-    },
-    {
-      title: 'Despacho Rápido',
-      description: 'Procesamiento expedito para minimizar demoras en frontera.'
-    }
-  ]
-},
-{
   id: 'last-mile',
-  name: 'Entrega de Última Milla',
-  title: 'Soluciones Eficientes de Entrega de Última Milla',
-  description: 'Complete el tramo final de su cadena de suministro con nuestros servicios confiables de entrega de última milla. Garantizamos que sus productos lleguen a los clientes de manera rápida y segura.',
+  name: 'NFO (Next Flight Out)/ Hot shots',
+  title: 'Soluciones Eficientes de NFO (Next Flight Out)/ Hot shots',
+  description: 'Nuestro servicio de Última Milla NFP (Next Flight Out) / Hot Shots está diseñado para envíos de extrema urgencia que deben viajar en el próximo vuelo disponible y entregarse sin demoras. Con personal altamente capacitado y monitoreo continuo, Vertex Freight Services es tu solución inmediata para entregas críticas, seguras y contra reloj.',
   image: '/assets/serv6.webp',
   imageCaption: 'Entrega rápida y confiable de última milla a sus clientes.',
   features: [
@@ -175,32 +200,7 @@ const services: Service[] = [
     }
   ]
 },
-{
-  id: 'project-cargo',
-  name: 'Carga de Proyectos',
-  title: 'Soluciones Especializadas para Carga de Proyectos',
-  description: 'Maneje carga compleja, sobredimensionada y pesada con nuestros servicios especializados de logística de proyectos. Proporcionamos soluciones personalizadas para desafíos únicos de transporte.',
-  image: '/assets/serv7.webp',
-  imageCaption: 'Manejo experto de carga sobredimensionada y proyectos complejos.',
-  features: [
-    {
-      title: 'Capacidad de Carga Pesada',
-      description: 'Equipo especializado para carga sobredimensionada y de gran peso.'
-    },
-    {
-      title: 'Planificación de Rutas',
-      description: 'Estudios detallados de viabilidad y reconocimiento de rutas para movimientos complejos.'
-    },
-    {
-      title: 'Gestión de Proyectos',
-      description: 'Gerentes de proyecto dedicados para coordinación de principio a fin.'
-    },
-    {
-      title: 'Soporte de Ingeniería',
-      description: 'Experiencia técnica para carga, aseguramiento y transporte de mercancía.'
-    }
-  ]
-}
+
 ];
 ---
 
