@@ -171,7 +171,7 @@
   /* Responsive */
   @media (max-width: 801px) {
     .hero-carousel {
-      height: 60vh;
+      height: 70vh;
       min-height: 450px;
       margin: 15px auto;
       border-radius: 16px;
@@ -189,29 +189,34 @@
 
     .nav-btn.prev {
       left: 15px;
+      display: none;
     }
 
     .nav-btn.next {
       right: 15px;
+      display: none;
     }
 
     .content h1 {
-    font-size: 30px;
+    font-size: 28px;
      margin: 0;
-    padding: 10px 40px;
+    padding: 10px 10px;
   }
 
   .content p {
 margin: 0;
-    padding: 0px 40px;
+    padding: 0px 10px;
      margin-bottom: 10px;
     font-size: 17px;
   }
   .cta-button {
-
     padding: 16px 20px;
-
   }
+
+  .content .cta-button{
+    max-width: 50%;
+  }
+  
   }
 
   @media (max-width: 480px) {
