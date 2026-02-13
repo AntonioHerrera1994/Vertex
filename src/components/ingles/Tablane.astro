@@ -1,0 +1,264 @@
+---
+import '../../styles/tabla.css'
+// ServiceDetail.astro
+interface Feature {
+  icon?: string;
+  title: string;
+  description: string;
+}
+
+interface Service {
+  id: string;
+  name: string;
+  title: string;
+  description: string;
+  image: string;
+  imageCaption: string;
+  features: Feature[];
+}
+
+const services: Service[] = [
+  {
+  id: 'ship-freight',
+  name: 'Ocean',
+  title: 'Reliable Ocean Freight Services for Global Trade',
+  description: 'Ocean freight remains the backbone of international logistics, offering businesses a cost-effective way to move goods worldwide. From full containers to specialized cargo, we manage every aspect of the shipping process.',
+  image: '/assets/serv2.webp',
+  imageCaption: 'Reliable ocean freight solutions for international trade.',
+  features: [
+    {
+      title: 'Full Container Load (FCL)',
+      description: 'Dedicated containers for large shipments with door-to-door service.'
+    },
+    {
+      title: 'Less than Container Load (LCL)',
+      description: 'Cost-effective shared cargo options for smaller volumes.'
+    },
+    {
+      title: 'Port-to-Port Service',
+      description: 'Reliable connections between major world ports.'
+    },
+    {
+      title: 'Customs Expertise',
+      description: 'Complete support in documentation and customs clearance.'
+    }
+  ]
+},
+{
+  id: 'trucking',
+  name: 'Ground',
+  title: 'Reliable Ground Transportation Services for Global Trade',
+  description: 'Ground transportation offers flexibility and efficiency for moving goods domestically and internationally. From full truckloads to partial shipments, we manage every aspect of road transport: documentation, customs clearance, route coordination, and final delivery. Our team ensures smooth, on-time, and secure transportation so your business can grow without boundaries.',
+  image: '/assets/serv3.webp',
+  imageCaption: 'Reliable ground transportation solutions designed to move your cargo safely on global trade routes.',
+  features: [
+    {
+      title: 'Global Distribution Network',
+      description: 'With access to key ground routes, we guarantee smooth connections across Asia, Europe, the Americas, and the Middle East.'
+    },
+    {
+      title: 'On-Time Deliveries',
+      description: 'We prioritize efficiency in scheduling and routing to ensure your shipments arrive on time, every time, without costly delays.'
+    },
+    {
+      title: 'Transparent Pricing Policy',
+      description: 'Our rates are clear and competitive with no hidden charges, guaranteeing complete cost transparency for your business.'
+    },
+    {
+      title: 'Special Cargo Handling',
+      description: 'We have the expertise and equipment to handle oversized, hazardous, and temperature-controlled cargo with care.'
+    }
+  ]
+},
+{
+  id: 'air-freight',
+  name: 'Air',
+  title: 'Fast Air Freight Solutions for Global Trade',
+  description: 'Air freight offers the fastest shipping method for urgent cargo, connecting businesses worldwide. From express shipments to specialized handling, we manage every aspect of air transportation: bookings, customs clearance, tracking, and final delivery.',
+  image: '/assets/serv1.webp',
+  imageCaption: 'Reliable air freight solutions for urgent deliveries worldwide.',
+  features: [
+    {
+      title: 'Express Delivery',
+      description: 'Fast shipping options for urgent cargo with guaranteed delivery times.'
+    },
+    {
+      title: 'Global Coverage',
+      description: 'Access to major airports worldwide ensuring seamless connections.'
+    },
+    {
+      title: 'Real-Time Tracking',
+      description: 'Monitor your shipments 24/7 with advanced tracking technology.'
+    },
+    {
+      title: 'Specialized Handling',
+      description: 'Expert management for temperature-sensitive cargo and fragile merchandise.'
+    }
+  ]
+},
+{
+  id: 'project-cargo',
+  name: 'Projects',
+  title: 'Specialized Solutions for Project Cargo',
+  description: 'Handle complex, oversized, and heavy cargo with our specialized project logistics services. We provide customized solutions for unique transportation challenges.',
+  image: '/assets/serv7.webp',
+  imageCaption: 'Expert handling of oversized cargo and complex projects.',
+  features: [
+    {
+      title: 'Heavy Lift Capability',
+      description: 'Specialized equipment for oversized and heavy-weight cargo.'
+    },
+    {
+      title: 'Route Planning',
+      description: 'Detailed feasibility studies and route surveys for complex movements.'
+    },
+    {
+      title: 'Project Management',
+      description: 'Dedicated project managers for end-to-end coordination.'
+    },
+    {
+      title: 'Engineering Support',
+      description: 'Technical expertise for loading, securing, and transporting cargo.'
+    }
+  ]
+},
+{
+  id: 'custom-brokerage',
+  name: 'Customs Services',
+  title: 'Expert Customs Brokerage Services',
+  description: 'Navigate complex customs regulations with our expert brokerage services. We handle all documentation, duties, and compliance requirements to ensure smooth border crossings.',
+  image: '/assets/serv5.webp',
+  imageCaption: 'Professional customs clearance for international shipments.',
+  features: [
+    {
+      title: 'Customs Compliance',
+      description: 'Expert guidance on international trade regulations and requirements.'
+    },
+    {
+      title: 'Documentation Support',
+      description: 'Complete preparation of all required customs documentation.'
+    },
+    {
+      title: 'Duty Calculation',
+      description: 'Accurate assessment of duties, taxes, and tariffs.'
+    },
+    {
+      title: 'Fast Clearance',
+      description: 'Expedited processing to minimize border delays.'
+    }
+  ]
+},
+{
+  id: 'warehousing',
+  name: 'Warehousing',
+  title: 'Secure Warehousing and Distribution Services',
+  description: 'Our warehousing solutions provide secure storage and efficient distribution for your inventory. From short-term storage to long-term fulfillment, we manage your goods with precision.',
+  image: '/assets/serv4.webp',
+  imageCaption: 'State-of-the-art warehousing facilities for your inventory.',
+  features: [
+    {
+      title: 'Secure Storage',
+      description: '24/7 monitored facilities with advanced security systems.'
+    },
+    {
+      title: 'Inventory Management',
+      description: 'Real-time tracking and administration of your stored goods.'
+    },
+    {
+      title: 'Flexible Solutions',
+      description: 'Short and long-term storage options to meet your needs.'
+    },
+    {
+      title: 'Distribution Services',
+      description: 'Efficient order fulfillment and last-mile delivery coordination.'
+    }
+  ]
+},
+{
+  id: 'last-mile',
+  name: 'NFO (Next Flight Out)/ Hot Shots',
+  title: 'NFO (Next Flight Out)/ Hot Shots',
+  description: 'Our NFO (Next Flight Out) / Hot Shots Last Mile service is designed for extremely urgent shipments that must travel on the next available flight and be delivered without delays. With highly trained personnel and continuous monitoring, Vertex Freight Services is your immediate solution for critical, secure, time-sensitive deliveries.',
+  image: '/assets/serv6.webp',
+  imageCaption: 'Fast and reliable last-mile delivery to your customers.',
+  features: [
+    {
+      title: 'Same-Day Delivery',
+      description: 'Urgent delivery options for critical and time-sensitive shipments.'
+    },
+    {
+      title: 'Route Optimization',
+      description: 'Efficient routing for faster deliveries and reduced costs.'
+    },
+    {
+      title: 'Proof of Delivery',
+      description: 'Digital signatures and photo confirmation for each delivery.'
+    },
+    {
+      title: 'Customer Communication',
+      description: 'Real-time updates and notifications for recipients.'
+    }
+  ]
+},
+
+];
+---
+
+<section class="service-detail-section">
+  <div class="service-container">
+    <!-- Sidebar Navigation -->
+    <aside class="service-sidebar">
+      {services.map((service, index) => (
+        <button 
+          class={`sidebar-item ${index === 0 ? 'active' : ''}`}
+          data-service={service.id}
+        >
+          {service.name}
+        </button>
+      ))}
+    </aside>
+
+    <!-- Main Content -->
+    <div class="service-content">
+      {services.map((service, index) => (
+        <div class={`service-panel ${index === 3 ? 'active' : ''}`} data-panel={service.id}>
+          <!-- Hero Section with Image -->
+          <div class="content-hero">
+            <div class="hero-text">
+              <h1>{service.title}</h1>
+              <p>{service.description}</p>
+            </div>
+            <div class="hero-image">
+              <img src={service.image} alt={service.title} />
+              <div class="image-caption">
+                {service.imageCaption}
+              </div>
+            </div>
+          </div>
+
+        
+          <div class="features-section">
+            <h2 class="features-title">Key Features</h2>
+            <div class="features-grid">
+              {service.features.map(feature => (
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i class="bi bi-check"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h3>{feature.title}</h3>
+                    <p>{feature.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+    import '../../scripts/tabla'
+</script>

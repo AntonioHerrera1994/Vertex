@@ -1,0 +1,51 @@
+---
+
+// FeaturesGrid.astro
+const features = [
+  {
+    title: 'Proven Logistics Experience',
+    description: 'Our specialists have decades of experience in freight forwarding, freight brokerage, and customs clearance, ensuring smooth, efficient, and secure operations in domestic and international supply chains, especially in Mexico–United States operations.'
+  },
+  {
+    title: 'Commitment to Fast and Reliable Deliveries',
+    description: 'We understand the urgency of every shipment. That\'s why we act quickly, optimizing routes and using tracking technology to ensure on-time deliveries, minimize delays, and maintain complete control in cross-border operations.'
+  },
+  {
+    title: 'Transparent Pricing Policy',
+    description: 'We offer clear, competitive, and easy-to-understand rates. At Vertex Freight Services, we guarantee zero hidden charges and complete financial transparency, providing confidence and predictability in every logistics operation.'
+  },
+  {
+    title: 'Reliable Cargo Handling',
+    description: 'Every shipment is managed with precision and care to avoid risks. From packaging to loading, we guarantee that your cargo arrives safely and intact.'
+  },
+  {
+    title: 'Comprehensive Solutions',
+    description: 'We cover every stage of logistics, including warehousing, distribution, and freight transportation. Our integrated services make supply chain management simple and efficient.'
+  },
+  {
+    title: 'Satisfaction Guarantee',
+    description: 'Your trust is our top priority on every shipment. We back our services with responsive support and a solid customer satisfaction guarantee.'
+  }
+];
+import '../../styles/elegirnos.css'
+---
+
+<section class="features-section">
+<h4>Why Choose Vertex Freight Services?</h4>
+        <h2>Vertex Freight Services:<br> Your Trusted Logistics Partner for Worldwide Shipments</h2>
+  <div class="features-container">
+    <div class="features-grid">
+      {features.map(feature => (
+        <div class="feature-card">
+          <div class="icon-box">
+            <i class="bi bi-check"></i>
+          </div>
+          <div class="feature-content">
+            <h3>{feature.title}</h3>
+            <p>{feature.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

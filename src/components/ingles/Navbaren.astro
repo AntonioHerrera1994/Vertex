@@ -1,20 +1,20 @@
 ---
-import '../styles/navbar.css'
-import Logo from '../assets/vertex-naranja-2.png'
+import '../../styles/navbar.css'
+import Logo from '../../assets/vertex-naranja-2.png'
 
 const navLinks = [
-  { name: 'Inicio', href: '/' },
-  { name: 'Nosotros', href: '/nosotros' },
-  { name: 'Servicios', href: '/servicios' },
-  { name: 'Contacto', href: '/contacto' },
-  { name: 'Ingles', href: '/en'}
+  { name: 'Home', href: '/en' },
+  { name: 'About Us', href: '/about-us' },
+  { name: 'Services', href: '/services' },
+  { name: 'Contact', href: '/contact' },
+  { name: 'Spanish', href: '/' },
 ];
 ---
 
 <nav class="navbar">
   <div class="navbar-container">
     <!-- Logo -->
-    <a href="/" class="logo">
+    <a href="/en" class="logo">
       <img src={Logo.src} alt="Vertex Freight">
     </a>
 
@@ -28,7 +28,7 @@ const navLinks = [
     </ul>
 
     <!-- Desktop CTA Button -->
-    <a href="tel:+526461054242" class="cta-btn desktop-cta">Solicitar Cotización</a>
+    <a href="tel:+526461054242" class="cta-btn desktop-cta">Request a Quote</a>
 
     <!-- Hamburger Button -->
     <button class="hamburger" aria-label="Toggle menu">
@@ -54,7 +54,7 @@ const navLinks = [
     <div class="sidebar-content">
       <!-- Navigation Menu Section -->
       <div class="sidebar-section">
-        <h3>Menú</h3>
+        <h3>Menu</h3>
         <ul class="nav-list">
           {navLinks.map(link => (
             <li>
@@ -71,7 +71,7 @@ const navLinks = [
 
       <!-- Contact Us Section -->
       <div class="sidebar-section">
-        <h3>Contacto</h3>
+        <h3>Contact</h3>
         <ul class="contact-list">
           <li>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -97,13 +97,13 @@ const navLinks = [
 
       <!-- About Us Section -->
       <div class="sidebar-section">
-        <h3>Nosotros</h3>
-        <p>En Vertex Freight Services, somos su aliado confiable en logística internacional. Nos especializamos en transportar su mercancía de forma segura, eficiente y puntual a cualquier destino del mundo.</p>
+        <h3>About Us</h3>
+        <p>At Vertex Freight Services, we are your reliable partner in international logistics. We specialize in transporting your cargo safely, efficiently, and on time to any destination in the world.</p>
       </div>
     </div>
   </aside>
 </nav>
 
 <script>
-  import '../scripts/navbar'
+  import '../../scripts/navbar'
 </script>

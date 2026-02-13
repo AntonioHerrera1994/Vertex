@@ -1,9 +1,11 @@
 ---
 
-import HeaderPages from '../components/HeaderPages.astro'
-import Formulario from '../components/Formulario.astro'
-import Footer from '../components/Footer.astro'
-import MotivationalBanner from '../components/MotivationalBanner.astro';
+import HeaderPagen from "../components/ingles/HeaderPagen.astro"
+import Abouten from "../components/ingles/Abouten.astro"
+import Experienciaen from "../components/ingles/Experienciaen.astro"
+import Experten from "../components/ingles/Experten.astro"
+import Banneren from "../components/ingles/Banneren.astro"
+import Footeren from "../components/ingles/Footeren.astro"
 ---
 
 <!doctype html>
@@ -13,24 +15,23 @@ import MotivationalBanner from '../components/MotivationalBanner.astro';
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/logo.png" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Contacto - Vertex Freight Services</title>
+		<title>Nosotros - Vertex Freight Services</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 	</head>
-	<body>
-		<HeaderPages title='Contacto'/>
-<Formulario />
-	<MotivationalBanner />
 
-	<Footer />
 
-	</body>
+
+   <HeaderPagen title='About Us'/>
+   <Abouten />
+<Experienciaen />
+<Experten />
+<Banneren />
+<Footeren />
 </html>
 
-
-	
 <style>
 	html,
 	body {

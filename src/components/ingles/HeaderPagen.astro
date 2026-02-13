@@ -1,0 +1,51 @@
+---
+import '../../styles/headerpages.css'
+import Navbaren from '../ingles/Navbaren.astro';
+// PageHeader.astro
+interface Props {
+  title: string;
+  breadcrumb?: Array<{ name: string; href?: string }>;
+  backgroundImage?: string;
+}
+
+const { 
+  title, 
+  breadcrumb = [{ name: 'Home', href: '/en' }],
+  backgroundImage = '/assets/breadcrumb.webp'
+} = Astro.props;
+---
+
+<section class="page-header">
+    <Navbaren />
+  <div 
+    class="header-background" 
+    style={`background-image: url('${backgroundImage}')`}
+  >
+    <div class="header-overlay"></div>
+    <div class="header-content">
+      <h1 class="header-title">{title}</h1>
+      
+      {breadcrumb && breadcrumb.length > 0 && (
+        <nav class="breadcrumb">
+          {breadcrumb.map((item, index) => (
+            <>
+              {item.href ? (
+                <a href={item.href} class="breadcrumb-item">{item.name}</a>
+              ) : (
+                <span class="breadcrumb-item">{item.name}</span>
+              )}
+              {index < breadcrumb.length && (
+                <svg class="breadcrumb-separator" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M6 12l4-4-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              )}
+              {index === breadcrumb.length - 1 && (
+                <span class="breadcrumb-item active">{title}</span>
+              )}
+            </>
+          ))}
+        </nav>
+      )}
+    </div>
+  </div>
+</section>

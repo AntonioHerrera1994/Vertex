@@ -1,0 +1,142 @@
+---
+import '../../styles/faqs.css'
+
+// FAQs.astro
+const faqCategories = [
+  {
+    id: 'shipping',
+    name: 'Shipping and Delivery',
+    questions: [
+     {
+  question: 'What services do you offer?',
+  answer: 'We offer comprehensive logistics services including air, ocean, and ground transportation, warehousing, customs management, and complete supply chain solutions. We handle both domestic and international shipments.'
+},
+{
+  question: 'How can I start using your services?',
+  answer: 'Getting started is easy! Contact us through our website, email, or phone. Our team will review your shipping needs, provide you with a quote, and guide you through the registration process.'
+},
+{
+  question: 'Do you handle international shipments?',
+  answer: 'Yes, we specialize in international shipping. We have partnerships with carriers worldwide and manage all customs documentation, duties, and international regulations to ensure smooth cross-border deliveries.'
+},
+{
+  question: 'What does the shipping process include?',
+  answer: 'Our shipping process includes pickup scheduling, packaging assistance, documentation preparation, customs clearance, real-time tracking, and delivery confirmation. We handle all logistics aspects from origin to final destination.'
+},
+
+    ]
+  },
+  {
+    id: 'tracking',
+    name: 'Tracking and Support',
+    questions: [
+    {
+  question: 'How can I track my shipment?',
+  answer: 'You can track your shipment 24/7 through our online portal using your tracking number. You will also receive automatic email and SMS updates at key milestones during the delivery process.'
+},
+{
+  question: 'What happens if my shipment is delayed?',
+  answer: 'If your shipment experiences delays, our team will proactively contact you with updates and alternative solutions. We work closely with carriers to minimize delays and keep you informed at every step of the process.'
+},
+{
+  question: 'Do you offer customer support?',
+  answer: 'Yes, we provide dedicated customer support by phone, email, and live chat. Our support team is available Monday through Friday from 8am to 6pm EST, with 24/7 emergency support available for urgent issues.'
+},
+{
+  question: 'Can I change the delivery address after shipping?',
+  answer: 'Address changes may be possible depending on the shipment status and carrier. Contact our support team immediately, and we will do our best to redirect your shipment or coordinate with the carrier.'
+},
+{
+  question: 'What happens if my package is lost or damaged?',
+  answer: 'All shipments are insured. If your package is lost or damaged, file a claim through our portal within 48 hours. We will investigate immediately and process compensation according to our insurance policy.'
+}
+    ]
+  },
+  {
+    id: 'billing',
+    name: 'Billing and Documentation',
+    questions: [
+      {
+  question: 'What payment methods do you accept?',
+  answer: 'We accept credit cards, wire transfers, corporate accounts, and net payment terms for established customers. Payment is generally due at the time of shipping or according to agreed payment terms.'
+},
+{
+  question: 'How do I receive invoices?',
+  answer: 'Invoices are sent electronically to your registered email immediately after shipping. You can also access all your invoices through your online account portal at any time.'
+},
+{
+  question: 'What documentation is required for international shipments?',
+  answer: 'International shipments require commercial invoices, packing lists, and in some cases, certificates of origin. Our team will guide you through all documentation requirements and can prepare the documents on your behalf.'
+},
+{
+  question: 'Do you provide customs clearance?',
+  answer: 'Yes, we manage all customs clearance procedures including documentation preparation, duty calculation, and coordination with customs authorities to ensure smooth clearance of your shipments.'
+},
+{
+  question: 'Can I get a detailed cost breakdown?',
+  answer: 'Absolutely. All quotes include detailed breakdowns of shipping costs, fuel surcharges, insurance, customs duties, and any additional services. We believe in complete transparency with no hidden charges.'
+}
+    ]
+  }
+];
+---
+
+<section class="faqs-section">
+  <div class="faqs-container">
+    <div class="faqs-grid">
+ <div class="faqs-header">
+<h4>Find quick answers about our logistics services</h4>
+      <h2>Frequently Asked Questions</h2>
+      
+    </div>
+     <div class="componente">
+           <!-- Tabs -->
+    <div class="tabs-wrapper">
+      {faqCategories.map((category, index) => (
+        <button 
+          class={`tab-button ${index === 0 ? 'active' : ''}`}
+          data-tab={category.id}
+        >
+          {category.name}
+        </button>
+      ))}
+    </div>
+
+    <!-- FAQ Content -->
+    <div class="faqs-content">
+      {faqCategories.map((category, catIndex) => (
+        <div 
+          class={`tab-panel ${catIndex === 0 ? 'active' : ''}`}
+          data-panel={category.id}
+        >
+          <div class="accordion">
+            {category.questions.map((faq, index) => (
+              <div class="accordion-item">
+                <button class="accordion-header">
+                  <span class="accordion-question">{faq.question}</span>
+                  <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </button>
+                <div class="accordion-content">
+                  <p>{faq.answer}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+    </div>
+    </div>
+
+
+
+
+   
+ 
+  </div>
+</section>
+<script>
+    import '../../scripts/faqs'
+</script>
