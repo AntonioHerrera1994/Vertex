@@ -1,6 +1,9 @@
 import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
+  site: 'https://vertexf.com/',
+  integrations: [sitemap()],
   vite: {
     server: {
       fs: {
