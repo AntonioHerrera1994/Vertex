@@ -36,7 +36,7 @@
     font-family: "Manrope", Sans-serif;
     font-size: 1.1rem;
     font-weight: 600;
-    color: #ff5722;
+    color: #083c7c;
     text-transform: capitalize;
   }
 
@@ -52,7 +52,7 @@
   .cta-button {
     display: inline-block;
     padding: 18px 40px;
-    background: #ff5722!important;
+    background: #083c7c!important;
     color: white;
     text-decoration: none;
     border-radius: 50px;

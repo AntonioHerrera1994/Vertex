@@ -59,7 +59,7 @@
   }
 
   .desktop-menu a:hover {
-    color: #ff5722;
+    color: white;
   }
 
   /* CTA Button */
@@ -256,7 +256,7 @@ line-height: 30px;
   }
 
   .contact-list a:hover {
-    color: #ff5722;
+    color: #083c7c;
   }
 
   /* About Text */

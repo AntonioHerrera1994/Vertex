@@ -39,7 +39,7 @@
   }
 
   .sidebar-item.active {
-    background: #ff5722;
+    background: #083c7c;
     color: white;
   }
 
@@ -113,7 +113,7 @@
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background: #ff5722;
+    background: #083c7c;
     color: white;
     padding: 20px;
     border-radius: 12px;

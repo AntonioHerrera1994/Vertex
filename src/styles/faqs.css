@@ -32,7 +32,7 @@
   }
 
   .faqs-header h4 {
-   color: #F85C00;
+   color: #083c7c;
     font-family: "Manrope", Sans-serif;
     font-size: 17px;
     font-weight: 600;
@@ -67,7 +67,7 @@
 
   .tab-button.active {
     color: white;
-    background: #ff5722;
+    background: #083c7c;
   }
 
   /* Tab Panels */
@@ -200,7 +200,7 @@
     }
 
     .tab-button.active {
-      background: #ff5722;
+      background: #083c7c;
     }
 
     .accordion-question {

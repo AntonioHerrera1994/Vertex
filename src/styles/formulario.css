@@ -22,7 +22,7 @@
     font-family: "Manrope", Sans-serif;
     font-size: 1.1rem;
     font-weight: 600;
-    color: #ff5722;
+    color: #083c7c;
     text-transform: capitalize;
   }
 
@@ -61,7 +61,7 @@
     flex-shrink: 0;
     width: 60px;
     height: 60px;
-    background: #ff5722;
+    background: #083c7c;
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -143,7 +143,7 @@
 
   .submit-button {
     padding: 18px 40px;
-    background: #ff5722;
+    background: #083c7c;
     color: white;
     border: none;
     border-radius: 50px;
@@ -156,9 +156,9 @@
   }
 
   .submit-button:hover {
-    background: #ff7043;
+    background: #083c7c;
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(255, 87, 34, 0.4);
+    box-shadow: 0 10px 30px #083c7c;
   }
 
   /* Responsive */

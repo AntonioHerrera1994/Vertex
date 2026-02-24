@@ -90,7 +90,7 @@
   .cta-button {
     display: inline-block;
     padding: 16px 40px;
-    background: #ff5722;
+    background: #083c7c;
     color: white;
     text-decoration: none;
     border-radius: 50px;
@@ -102,9 +102,10 @@
   }
 
   .cta-button:hover {
-    background: #ff7043;
+    background: white;
     transform: translateY(-2px);
     box-shadow: 0 10px 30px rgba(255, 87, 34, 0.4);
+    color:#083c7c!important;
   }
 
   /* Controles de navegación */
