@@ -267,6 +267,20 @@ line-height: 30px;
   }
 
   /* Desktop Styles */
+
+  @media screen and (max-width:801px){
+ .navbar {
+margin-top:-22px;
+  }
+
+   /* Logo */
+  .logo img {
+    height: 60px;
+    width: auto;
+    transition: height 0.3s ease;
+  }
+  }
+
   @media (min-width: 1024px) {
     .hamburger {
       display: none;
