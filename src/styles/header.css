@@ -172,7 +172,7 @@
   /* Responsive */
   @media (max-width: 801px) {
     .hero-carousel {
-      height: 70vh;
+      height: 85vh;
       min-height: 450px;
       margin: 15px auto;
       border-radius: 16px;
@@ -199,7 +199,7 @@
     }
 
     .content h1 {
-    font-size: 28px;
+    font-size: 26px;
      margin: 0;
     padding: 10px 10px;
   }
