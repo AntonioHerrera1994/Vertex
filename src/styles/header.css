@@ -176,7 +176,7 @@
       min-height: 450px;
       margin: 15px auto;
       border-radius: 16px;
-    width: calc(100% - 30px);
+    width: calc(100% - 20px);
     }
 
     .content {
