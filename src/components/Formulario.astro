@@ -64,49 +64,67 @@ import '../styles/formulario.css'
     ¿Tiene una pregunta, sugerencia, o simplemente quiere saludar? Complete el formulario a continuación y le responderemos pronto.
   </p>
 
-  <form class="contact-form">
-    <div class="form-group">
-      <input 
-        type="text" 
-        name="name" 
-        placeholder="Su Nombre" 
-        required
-        class="form-input"
-      />
-    </div>
+<form 
+  class="contact-form"
+  name="contacto"
+  method="POST"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+>
+  <!-- Campo oculto requerido por Netlify -->
+  <input type="hidden" name="form-name" value="contacto" />
+  
+  <!-- Honeypot anti-spam (opcional pero recomendado) -->
+  <p class="hidden">
+    <input name="bot-field" />
+  </p>
 
-    <div class="form-group">
-      <input 
-        type="tel" 
-        name="phone" 
-        placeholder="Su Teléfono" 
-        required
-        class="form-input"
-      />
-    </div>
+  <div class="form-group">
+    <input 
+      type="text" 
+      name="name" 
+      placeholder="Su Nombre" 
+      required
+      class="form-input"
+    />
+  </div>
 
-    <div class="form-group">
-      <input 
-        type="email" 
-        name="email" 
-        placeholder="Su Email" 
-        required
-        class="form-input"
-      />
-    </div>
+  <div class="form-group">
+    <input 
+      type="tel" 
+      name="phone" 
+      placeholder="Su Teléfono" 
+      required
+      class="form-input"
+    />
+  </div>
 
-    <div class="form-group">
-      <textarea 
-        name="message" 
-        placeholder="Su mensaje" 
-        rows="5"
-        required
-        class="form-textarea"
-      ></textarea>
-    </div>
+  <div class="form-group">
+    <input 
+      type="email" 
+      name="email" 
+      placeholder="Su Email" 
+      required
+      class="form-input"
+    />
+  </div>
 
-    <button type="submit" class="submit-button">Enviar mensaje</button>
-  </form>
+  <div class="form-group">
+    <textarea 
+      name="message" 
+      placeholder="Su mensaje" 
+      rows="5"
+      required
+      class="form-textarea"
+    ></textarea>
+  </div>
+
+  <button type="submit" class="submit-button">Enviar mensaje</button>
+</form>
+
+<style>
+  .hidden { display: none; }
+</style>
 </div>
   </div>
 </section>
