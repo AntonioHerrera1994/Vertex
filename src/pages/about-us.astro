@@ -10,56 +10,78 @@ import Footeren from "../components/ingles/Footeren.astro"
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/faviconvel.png" />
-		<meta name="generator" content={Astro.generator} />
-		  <link rel="sitemap" href="/sitemap-index.xml" />
-		<title>About Us | Velora</title>
-<meta name="description" content="We specialize in transporting your goods safely, efficiently, and on time to any destination in the world.">
-<meta name="keywords" content="international logistics, freight transport, customs agent Mexico, freight forwarding, import export">
-<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-<meta name="googlebot" content="index, follow">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" type="image/svg+xml" href="/faviconvel.png" />
+	<meta name="generator" content={Astro.generator} />
+	<link rel="sitemap" href="/sitemap-index.xml" />
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FTB26Z1MCL"></script>
-<script is:inline>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<title>About Us | Velora</title>
+	<meta name="description" content="We specialize in transporting your goods safely, efficiently, and on time to any destination in the world.">
+	<meta name="keywords" content="international logistics, freight transport, customs agent Mexico, freight forwarding, import export">
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+	<meta name="googlebot" content="index, follow">
 
-  gtag('config', 'G-FTB26Z1MCL');
-</script>
+	<!-- Canonical -->
+	<link rel="canonical" href="https://veloracargo.com/en/about" />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://veloracargo.com/en/about" />
+	<meta property="og:title" content="About Us | Velora" />
+	<meta property="og:description" content="We specialize in transporting your goods safely, efficiently, and on time to any destination in the world." />
+	<meta property="og:image" content="https://veloracargo.com/assets/breadcrumb.webp" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:site_name" content="Velora" />
 
-<!-- Meta Pixel Code -->
-{import.meta.env.PROD && (
-  <script is:inline>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1069315705603257');
-  fbq('track', 'PageView');
-  </script>
-)}
-<noscript>
-  {import.meta.env.PROD && (
-    <img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1069315705603257&ev=PageView&noscript=1" />
-  )}
-</noscript>
-<!-- End Meta Pixel Code -->
-	</head>
+	<!-- Twitter / X -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:url" content="https://veloracargo.com/en/about" />
+	<meta name="twitter:title" content="About Us | Velora" />
+	<meta name="twitter:description" content="We specialize in transporting your goods safely, efficiently, and on time to any destination in the world." />
+	<meta name="twitter:image" content="https://veloracargo.com/assets/breadcrumb.webp" />
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FTB26Z1MCL"></script>
+	<script is:inline>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-FTB26Z1MCL');
+	</script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+	<!-- Meta Pixel Code -->
+	{import.meta.env.PROD && (
+	  <script is:inline>
+	  !function(f,b,e,v,n,t,s)
+	  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	  n.queue=[];t=b.createElement(e);t.async=!0;
+	  t.src=v;s=b.getElementsByTagName(e)[0];
+	  s.parentNode.insertBefore(t,s)}(window, document,'script',
+	  'https://connect.facebook.net/en_US/fbevents.js');
+	  fbq('init', '1069315705603257');
+	  fbq('track', 'PageView');
+	  </script>
+	)}
+	<noscript>
+	  {import.meta.env.PROD && (
+	    <img height="1" width="1" style="display:none"
+	    src="https://www.facebook.com/tr?id=1069315705603257&ev=PageView&noscript=1" />
+	  )}
+	</noscript>
+	<!-- End Meta Pixel Code -->
+</head>
 
 
 
